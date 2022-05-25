@@ -1,14 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Set up Hello Microverse
+# Portfolio: setup and mobile version skeleton
 
-> Set up a "Hello Microverse" project.
+> This is a project to setup a mobile version skeleton for a portfolio.
 
 
 ## Built With
 
 - HTML/CSS
 - Visual Studio
+- Flexbox
 
 ## Authors
 
