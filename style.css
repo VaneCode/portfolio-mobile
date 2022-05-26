@@ -1,7 +1,7 @@
 body {
   width: 320px;
   height: 4910px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .header_container {
@@ -30,7 +30,7 @@ body {
 }
 
 .text_title {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 90px;
@@ -41,14 +41,16 @@ body {
 
 .text_style {
   font-weight: 400;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   line-height: 21px;
+  color: #1a2236;
   letter-spacing: -0.01em;
   text-align: left;
 }
 
 .text_button {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -57,7 +59,7 @@ body {
 }
 
 .dark_button {
-  color: #ffffff;
+  color: #fff;
   width: 254px;
   height: 70px;
   left: 160px;
@@ -67,13 +69,13 @@ body {
 
 .dark_button:hover {
   box-sizing: border-box;
-  background: #ffffff;
+  background: #fff;
   color: #1a2236;
 }
 
 .dark_button:active {
   box-sizing: border-box;
-  background: #ffffff;
+  background: #fff;
   color: #1a2236;
   border: 2px solid #1a2236;
 }
@@ -89,9 +91,9 @@ body {
   align-self: flex-start;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding: 0px 10px 0px 4px;
+  padding-left: 10px;
+  padding-right: 4px;
 }
-
 
 .item-2 {
   align-self: flex-start;
@@ -101,7 +103,6 @@ body {
 
 .item-3 {
   align-self: center;
-
 }
 
 .item-4 {
