@@ -1,7 +1,7 @@
 body {
   width: 320px;
   height: 4910px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .header_container {
@@ -35,8 +35,8 @@ body {
   font-weight: 400;
   font-size: 90px;
   line-height: 100%;
-  color: #1A2236;
-  text-align: left; 
+  color: #1a2236;
+  text-align: left;
 }
 
 .text_style {
@@ -44,41 +44,41 @@ body {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  text-align: left; 
+  text-align: left;
 }
 
-.text_button{
+.text_button {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  text-align: center; 
+  text-align: center;
 }
 
 .dark_button {
-  color: #FFFFFF;
+  color: #ffffff;
   width: 254px;
   height: 70px;
   left: 160px;
   top: 715px;
-  background: #1A2236;
+  background: #1a2236;
 }
 
-.dark_button:hover{
+.dark_button:hover {
   box-sizing: border-box;
-  background: #FFFFFF;
-  color: #1A2236;
+  background: #ffffff;
+  color: #1a2236;
 }
 
-.dark_button:active{
+.dark_button:active {
   box-sizing: border-box;
-  background: #FFFFFF;
-  color: #1A2236;
-  border: 2px solid #1A2236;
+  background: #ffffff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -86,8 +86,8 @@ body {
 }
 
 .item-1 {
-  align-self:flex-start;
-  margin-top:5px ;
+  align-self: flex-start;
+  margin-top: 5px;
   margin-bottom: 5px;
   padding: 0px 10px 0px 4px;
 }
@@ -95,19 +95,19 @@ body {
 
 .item-2 {
   align-self: flex-start;
-  margin-top:5px ;
+  margin-top: 5px;
   margin-bottom: 8px;
 }
 
 .item-3 {
- align-self: center;
- 
+  align-self: center;
+
 }
 
 .item-4 {
   background-image: url("./images/image_geometry_2.png");
   background-repeat: no-repeat;
   height: 160px;
-  margin-top:10px ;
+  margin-top: 10px;
   flex-grow: 1;
 }
