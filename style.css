@@ -1,3 +1,61 @@
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+
 h1 {
-  color: blue;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 100%;
+  color: #1A2236;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 254px;
+  height: 70px;
+  left: 160px;
+  top: 715px;
+  background: #1A2236;
+}
+
+img {
+  position: absolute;
+  width: 200px;
+  height: 350px;
+}
+
+.textstyle{
+  font-family: 'Poppins';
+  font-style: normal;
+  color: #1A2236;
 }
