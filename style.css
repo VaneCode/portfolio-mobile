@@ -1,27 +1,39 @@
+body {
+  width: 320px;
+  height: 4910px;
+  background: #FFFFFF;
+}
 
-ul {
+.header_container {
   display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
+  width: 320px;
+  height: 80px;
+  justify-content: space-between;
 }
 
-a {
-  list-style-type: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
+.header_img {
+  width: 100px;
+  height: 77px;
+  justify-self: flex-start;
+  background-image: url("./images/img_geometry_header.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
+.menu_icon {
+  align-self: center;
+  justify-self: end;
+  height: 14px;
+  width: 20px;
+  background-image: url("./images/ic_menu.png");
+}
 
-h1 {
+.text_title {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 110px;
+  font-size: 90px;
   line-height: 100%;
   color: #1A2236;
 }
@@ -33,7 +45,7 @@ p {
   letter-spacing: -0.01em;
 }
 
-button {
+.dark_button {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -48,14 +60,44 @@ button {
   background: #1A2236;
 }
 
-img {
-  position: absolute;
-  width: 200px;
-  height: 350px;
-}
 
-.textstyle{
+
+.text_style {
   font-family: 'Poppins';
   font-style: normal;
   color: #1A2236;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-content: space-between;
+}
+
+.item-1 {
+  align-self:flex-start;
+  margin-top:5px ;
+  margin-bottom: 5px;
+  padding: 0px 10px 0px 4px;
+}
+
+
+.item-2 {
+  align-self: flex-start;
+  margin-top:5px ;
+  margin-bottom: 8px;
+}
+
+.item-3 {
+ align-self: center;
+ 
+}
+
+.item-4 {
+  background-image: url("./images/image_geometry_2.png");
+  background-repeat: no-repeat;
+  height: 160px;
+  margin-top:10px ;
+  flex-grow: 1;
 }
