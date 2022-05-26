@@ -36,22 +36,27 @@ body {
   font-size: 90px;
   line-height: 100%;
   color: #1A2236;
+  text-align: left; 
 }
 
-p {
+.text_style {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
+  text-align: left; 
 }
 
-.dark_button {
+.text_button{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  text-align: center;
+  text-align: center; 
+}
+
+.dark_button {
   color: #FFFFFF;
   width: 254px;
   height: 70px;
@@ -60,12 +65,17 @@ p {
   background: #1A2236;
 }
 
-
-
-.text_style {
-  font-family: 'Poppins';
-  font-style: normal;
+.dark_button:hover{
+  box-sizing: border-box;
+  background: #FFFFFF;
   color: #1A2236;
+}
+
+.dark_button:active{
+  box-sizing: border-box;
+  background: #FFFFFF;
+  color: #1A2236;
+  border: 2px solid #1A2236;
 }
 
 .container{
