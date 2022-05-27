@@ -1,3 +1,123 @@
-h1 {
-  color: blue;
+body {
+  width: 320px;
+  height: 4910px;
+  background: #fff;
+}
+
+.header_container {
+  display: flex;
+  width: 320px;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.header_img {
+  width: 100px;
+  height: 77px;
+  justify-self: flex-start;
+  background-image: url("./images/img_geometry_header.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.nav_flex {
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.menu_icon {
+  height: 14px;
+  width: 20px;
+  background-image: url("./images/ic_menu.png");
+}
+
+.text_title {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  color: #1a2236;
+  text-align: left;
+}
+
+.text_style {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.text_button {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.dark_button {
+  color: #fff;
+  width: 288px;
+  height: 50px;
+  left: 160px;
+  top: 715px;
+  background: #1a2236;
+  text-align: center;
+  line-height: 50px;
+}
+
+.dark_button:hover {
+  border-style: solid;
+  border-color: #1a2236;
+  border-width: 1px;
+  background: #fff;
+  color: #1a2236;
+}
+
+.dark_button:active {
+  border-style: solid;
+  border-color: #1a2236;
+  border-width: 2px;
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-content: space-between;
+}
+
+.item-1 {
+  align-self: flex-start;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 4px;
+}
+
+.item-2 {
+  align-self: flex-start;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.item-3 {
+  align-self: center;
+}
+
+.item-4 {
+  background-image: url("./images/image_geometry_2.png");
+  background-repeat: no-repeat;
+  height: 160px;
+  margin-top: 10px;
+  flex-grow: 1;
 }
