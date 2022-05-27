@@ -63,21 +63,27 @@ body {
 
 .dark_button {
   color: #fff;
-  width: 254px;
-  height: 70px;
+  width: 288px;
+  height: 50px;
   left: 160px;
   top: 715px;
   background: #1a2236;
+  text-align: center;
+  line-height: 50px;
 }
 
 .dark_button:hover {
-  box-sizing: border-box;
+  border-style: solid;
+  border-color: #1a2236;
+  border-width: 1px;
   background: #fff;
   color: #1a2236;
 }
 
 .dark_button:active {
-  box-sizing: border-box;
+  border-style: solid;
+  border-color: #1a2236;
+  border-width: 2px;
   background: #fff;
   color: #1a2236;
   border: 2px solid #1a2236;
