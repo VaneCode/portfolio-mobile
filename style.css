@@ -121,3 +121,45 @@ body {
   margin-top: 10px;
   flex-grow: 1;
 }
+
+/*Works section with grid and Flexbox*/
+
+.grid-works{
+  display: grid;
+  grid-template-columns:320px;
+  grid-template-rows: 100px 342px 342px 342px 342px 342px;
+  row-gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.div-title{
+  background-color: #1a2236;
+}
+
+.card-work{
+  background-color: #1a2236;
+  color: #fff;
+}
+
+/*About section with grid and Flexbox*/
+.grid-about{
+  display: grid;
+  grid-template-columns:288px;
+  grid-template-rows: 100px 200px 289px 289px 289px;
+  row-gap: 5px;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.div-title{
+  background-color: #1a2236;
+}
+
+.card-about{
+  background-color: #1a2236;
+  color: #fff;
+}
+
+
