@@ -11,7 +11,7 @@
 - Visual Studio
 - Flexbox
 
-## Authors
+## Author
 
 👤 **Vanessa Bonito**
 
