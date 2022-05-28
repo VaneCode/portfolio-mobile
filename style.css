@@ -46,8 +46,6 @@ body {
   background-image: url("./images/ic_download.png");
 }
 
-/* Text styles */
-
 .text_titleH1 {
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
@@ -96,8 +94,6 @@ body {
   line-height: 30px;
   color: #fff;
 }
-
-/* Dark button style */
 
 .text_button {
   font-family: 'Poppins', sans-serif;
@@ -168,8 +164,6 @@ body {
   margin-top: 10px;
   flex-grow: 1;
 }
-
-/* Works section with grid and Flexbox */
 
 .grid-works {
   display: grid;
@@ -292,7 +286,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* About section with grid and Flexbox */
 .grid-about {
   display: grid;
   grid-template-columns: 288px;
