@@ -1,6 +1,4 @@
 body {
-  width: 320px;
-  height: 4910px;
   background: #fff;
 }
 
@@ -295,7 +293,7 @@ body {
   grid-template-columns: 288px;
   grid-template-rows: 100px 200px 289px 289px 289px;
   row-gap: 15px;
-  justify-content: center;
+  justify-content: start;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -318,7 +316,7 @@ body {
   background: #1a2236;
 }
 
-.icon-about{
+.icon-about {
   margin-left: 6px;
   vertical-align: center;
 }
