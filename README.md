@@ -2,7 +2,8 @@
 
 # Portfolio: setup and mobile version skeleton
 
-> This is a project to setup a mobile version skeleton for a portfolio.
+> This is a project to setup a mobile version for a portfolio, that contains the hearline
+section, works section and about me section.
 
 
 ## Built With
