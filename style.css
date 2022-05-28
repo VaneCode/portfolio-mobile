@@ -271,19 +271,23 @@ body {
 }
 
 .flex-button-icon {
-  margin: 14px 12px 14px 5px;
+  margin-left: 6px;
+  vertical-align: center;
 }
 
 .button-work {
   font-family: 'Poppins', sans-serif;
-  width: 124px;
-  height: 15px;
   background: #1a2236;
   color: #fff;
   display: inline-block;
   padding-left: 5px;
   margin-top: 16px;
   margin-bottom: 16px;
+  margin-left: 16px;
+  width: 178px;
+  height: 44px;
+  border: 1px solid #fff;
+  line-height: 44px;
 }
 
 .grid-about {
@@ -304,25 +308,19 @@ body {
   margin-bottom: 40px;
 }
 
-.flex-button-about {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 288px;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
 .button-about {
-  width: 86px;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  color: #fff;
+  width: 288px;
+  height: 50px;
+  line-height: 50px;
+  left: 160px;
+  top: 715px;
+  background: #1a2236;
 }
 
-.flex-button-icon-about {
-  margin-top: 13px;
-  margin-bottom: 13px;
-  margin-left: 20px;
+.icon-about{
+  margin-left: 6px;
+  vertical-align: center;
 }
 
 .card-about-abilities {
