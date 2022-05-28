@@ -26,7 +26,7 @@ body {
   justify-self: flex-end;
 }
 
-/*Iconos*/
+/*Icons*/
 
 .menu_icon {
   height: 14px;
@@ -41,8 +41,8 @@ body {
 }
 
 .download_icon {
-  height: 15.53px;
-  width: 20.57px;
+  height: 24px;
+  width: 26px;
   background-image: url("./images/ic_download.png");
 }
 
@@ -86,6 +86,15 @@ body {
   color: #1a2236;
   letter-spacing: -0.01em;
   text-align: left;
+}
+
+.text-tytleAbout {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
 }
 
 /*Dark button style*/
@@ -193,27 +202,27 @@ body {
   background-position: cover;
 }
 
-.img-work-source1{
+.img-work-source1 {
   background-image: url("./images/project_1.jpg");
 }
 
-.img-work-source2{
+.img-work-source2 {
   background-image: url("./images/project_2.jpg");
 }
 
-.img-work-source3{
+.img-work-source3 {
   background-image: url("./images/project_3.jpg");
 }
 
-.img-work-source4{
+.img-work-source4 {
   background-image: url("./images/project_4.jpg");
 }
 
-.img-work-source5{
+.img-work-source5 {
   background-image: url("./images/project_5.png");
 }
 
-.img-work-source6{
+.img-work-source6 {
   background-image: url("./images/project_6.jpg");
 }
 
@@ -256,7 +265,7 @@ body {
 }
 
 .flex-button-work {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin-left: 20px;
@@ -267,7 +276,7 @@ body {
   border: 1px solid #fff;
 }
 
-.flex-button-icon{
+.flex-button-icon {
   margin: 14px 12px 14px 5px;
 }
 
@@ -275,18 +284,12 @@ body {
   font-family: 'Poppins', sans-serif;
   width: 124px;
   height: 15px;
-  background:#1a2236;
-	color:#fff;
-	display:inline-block;
+  background: #1a2236;
+  color: #fff;
+  display: inline-block;
   padding-left: 5px;
   margin-top: 16px;
   margin-bottom: 16px;
-}
-
-.button-work span {
-  margin-right: 5px;
-  height: 15.53px;
-  width: 20.57px;
 }
 
 /*About section with grid and Flexbox*/
@@ -294,13 +297,88 @@ body {
   display: grid;
   grid-template-columns: 288px;
   grid-template-rows: 100px 200px 289px 289px 289px;
-  row-gap: 5px;
+  row-gap: 15px;
   justify-content: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .card-about {
-  background-color: #1a2236;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
+  margin-bottom: 40px;
+}
+
+.flex-button-about {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 288px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.button-about {
+  width: 86px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.flex-button-icon-about {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
+
+.card-about-abilities {
+  width: 289px;
+  height: 289px;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.card-about-backgroundimg {
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: cover;
+  width: 289px;
+  height: 289px;
+}
+
+.title-about {
+  margin: 50px 61px 20px 50px;
+  width: 116px;
+  height: 30px;
+}
+
+.ul-about {
+  margin-right: 61px;
+  margin-left: 50px;
+  margin-bottom: 53px;
+  width: 178px;
+  height: 135px;
+}
+
+.li-about {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
+}
+
+.card-about-bgimg-source1 {
+  background-image: url("./images/bg_languages.png");
+}
+
+.card-about-bgimg-source2 {
+  background-image: url("./images/bg_frameworks.png");
+}
+
+.card-about-bgimg-source3 {
+  background-image: url("./images/bg_skills.png");
 }
