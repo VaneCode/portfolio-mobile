@@ -26,7 +26,7 @@ body {
   justify-self: flex-end;
 }
 
-/*Icons*/
+/* Icons */
 
 .menu_icon {
   height: 14px;
@@ -46,7 +46,7 @@ body {
   background-image: url("./images/ic_download.png");
 }
 
-/*Text styles*/
+/* Text styles */
 
 .text_titleH1 {
   font-family: 'Playfair Display', sans-serif;
@@ -97,7 +97,7 @@ body {
   color: #fff;
 }
 
-/*Dark button style*/
+/* Dark button style */
 
 .text_button {
   font-family: 'Poppins', sans-serif;
@@ -169,7 +169,7 @@ body {
   flex-grow: 1;
 }
 
-/*Works section with grid and Flexbox*/
+/* Works section with grid and Flexbox */
 
 .grid-works {
   display: grid;
@@ -292,7 +292,7 @@ body {
   margin-bottom: 16px;
 }
 
-/*About section with grid and Flexbox*/
+/* About section with grid and Flexbox */
 .grid-about {
   display: grid;
   grid-template-columns: 288px;
