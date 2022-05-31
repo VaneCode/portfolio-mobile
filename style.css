@@ -459,5 +459,13 @@ form{
   margin: 20px 18px 64px 14px;
 }
 
+.social-icons{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 150px;
+  background-color: #1a2236;
+}
+
 
 
