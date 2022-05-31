@@ -388,24 +388,31 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  height: 800px;
   width: 320px;
+  border: 1px solid red;
+  border-radius: 4px;
 }
 
 .footer-header {
   margin: 10px 18px 20px 14px;
+  width: 288px;
+}
+
+form{
+  width: 320px;
+  padding-left: 18px;
+  padding-right: 14px;
 }
 
 .fieldset-style {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  width: 288px;
-  height: 52px;
   border: 1px solid #DFDFE0;
   border-radius: 4px;
-  margin-left: 18;
-  margin-right: 14;
+  margin-top: 8px;
+  margin-left: 18px;
+  margin-right: 14px;
 }
 
 .label-text {
@@ -427,45 +434,30 @@ body {
   border: 0px solid;
 
 }
+
 .fieldset-style:focus {
   border: 1px solid #1a2236;
 }
 
-
-.flex-form {
-  padding-top: 15px;
-  padding-left: 16px;
-}
-
-.input-style {
-  box-sizing: border-box;
-  left: 16px;
-  top: 4400px;
-  background: #fff;
-  border: 1px solid #dfdfe0;
-  border-radius: 4px;
-  margin-top: 8px;
-}
-
-.input-size {
-  width: 288px;
-  height: 52px;
-}
-
 .textarea-style {
-  width: 288px;
   height: 112px;
+  width: 268px;
   font-size: 14px;
   line-height: 21px;
   color: #7d7d84;
   border-radius: 4px;
   margin-top: 8px;
   border: 1px solid #DFDFE0;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  margin-right: 14px;
+  padding-left: 16px;
+  padding-top: 15px;
+}
+
+.form-button{
+  margin: 20px 18px 64px 14px;
 }
 
 
-.input-text-size {
-  font-size: 10px;
-  line-height: 15px;
-}
 

@@ -227,17 +227,26 @@
             <form action="" method="post">
                 <fieldset class="fieldset-style">
                     <label class="label-text">Your name</label>
-                    <input type="text" id="name" name="user_name" placeholder="Anastasiia" class="input-text">
+                    <input type="text" id="name" name="user_name" autofocus="true" maxlength="30" placeholder="Anastasiia" class="input-text">
                 </fieldset>
                 <fieldset class="fieldset-style">
                     <label class="label-text">Your name</label>
                     <input type="email" id="email" name="user_email" placeholder="youremail@outlook.com"
                         class="input-text">
                 </fieldset>
-                <textarea class="textarea-style" placeholder="Enter your message here.">
-                </textarea>
-                <button type="submit">Get start</button>
+                <textarea class="textarea-style" maxlength="500">Enter your message here</textarea>
+                <button type="submit" class="dark_button form-button">Start collaboration</button>
             </form>
+        </section>
+        <section class="social-icons">
+            <div>
+                <button type="button" class="button-about">
+                    Get my resume
+                    <svg class="download_icon icon-about"></svg>
+                </button>
+            </div>
+
+
         </section>
     </footer>
 </body>
