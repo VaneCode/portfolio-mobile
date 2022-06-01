@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -225,14 +225,15 @@
                 </p>
             </div>
             <form action="https://formspree.io/f/xoqrrrop" method="post">
-                <fieldset class="fieldset-style">
-                    <label class="label-text" for="user_name">Your name</label>
-                    <input type="text" id="name" name="user_name" required="required" autofocus="true" maxlength='30' placeholder="Anastasiia" class="input-text">
+                <fieldset class="fieldset-style blue-border">
+                    <label class="label-text" for="name">Your name</label>
+                    <input type="text" id="name" name="user_name" required="required" maxlength='30'
+                        placeholder="Anastasiia" class="input-text">
                 </fieldset>
-                <fieldset class="fieldset-style">
-                    <label class="label-text" for="user_email">Your name</label>
-                    <input type="email" id="email" required="required" name="user_email" placeholder="youremail@outlook.com"
-                        class="input-text">
+                <fieldset class="fieldset-style blue-border">
+                    <label class="label-text" for="email">Your name</label>
+                    <input type="email" id="email" required="required" name="user_email"
+                        placeholder="youremail@outlook.com" class="input-text">
                 </fieldset>
                 <textarea class="textarea-style" required="required" maxlength="500">Enter your message here</textarea>
                 <button type="submit" class="dark_button form-button">Start collaboration</button>
@@ -240,11 +241,43 @@
         </section>
         <section class="social-icons">
             <div>
-                <button type="button" class="button-about">
+                <button type="button" class="button-footer">
                     Get my resume
-                    <svg class="download_icon icon-about"></svg>
+                    <svg class="icon-get-resume"></svg>
                 </button>
             </div>
+            <ul class="social-icons-list">
+                <li>
+                    <a href="">
+                        <svg class="stackoverflow"></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="github social-icon"></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="twiter social-icon"></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="linkedin social-icon"></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="m social-icon"></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="vector social-icon"></svg>
+                    </a>
+                </li>
+            </ul>
         </section>
     </footer>
 </body>

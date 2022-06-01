@@ -54,6 +54,13 @@ body {
   background-image: url("./images/ic_download.png");
 }
 
+.icon-get-resume {
+  height: 22px;
+  width: 22px;
+  background-image: url("./images/ic_download_footer.png");
+  margin-left: 5px;
+}
+
 .text_titleH1 {
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
@@ -121,6 +128,23 @@ body {
   background: #1a2236;
   text-align: center;
   line-height: 50px;
+}
+
+.button-footer {
+  width: 150px;
+  height: 24px;
+  left: 16px;
+  top: 4792px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92dcdc;
+  background-color: #1a2236;
+  border: 0;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 
 .dark_button:hover {
@@ -389,7 +413,6 @@ body {
   align-items: center;
   margin-top: 50px;
   width: 320px;
-  border: 1px solid red;
   border-radius: 4px;
 }
 
@@ -398,7 +421,7 @@ body {
   width: 288px;
 }
 
-form{
+form {
   width: 320px;
   padding-left: 18px;
   padding-right: 14px;
@@ -408,7 +431,7 @@ form{
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  border: 1px solid #DFDFE0;
+  border: 1px solid #dfdfe0;
   border-radius: 4px;
   margin-top: 8px;
   margin-left: 18px;
@@ -425,17 +448,17 @@ form{
 }
 
 .input-text {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   margin-top: 4px;
-  border: 0px solid;
-
+  outline: none;
+  border: 0;
 }
 
-.fieldset-style:focus {
+fieldset:focus {
   border: 1px solid #1a2236;
 }
 
@@ -447,7 +470,7 @@ form{
   color: #7d7d84;
   border-radius: 4px;
   margin-top: 8px;
-  border: 1px solid #DFDFE0;
+  border: 1px solid #dfdfe0;
   margin-bottom: 20px;
   margin-left: 18px;
   margin-right: 14px;
@@ -455,17 +478,69 @@ form{
   padding-top: 15px;
 }
 
-.form-button{
+.blue-border:hover {
+  border: 1px solid #1a2236;
+}
+
+textarea:focus {
+  border: 1px solid #1a2236;
+}
+
+.form-button {
   margin: 20px 18px 64px 14px;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   flex-direction: column;
+  order: 1;
   width: 320px;
-  height: 150px;
+  height: 140px;
   background-color: #1a2236;
 }
 
+.social-icons-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 40px;
+}
 
+.social-icons-list li {
+  width: 24px;
+  height: 24px;
+}
 
+.social-icon {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.github {
+  background-image: url("./images/github.png");
+}
+
+.linkedin {
+  background-image: url("./images/linkedin.png");
+}
+
+.stackoverflow {
+  background-image: url("./images/ic_stackoverflow.png");
+  width: 24px;
+  height: 24px;
+}
+
+.twiter {
+  background-image: url("./images/twiter.png");
+}
+
+.m {
+  background-image: url("./images/M.png");
+}
+
+.vector {
+  background-image: url("./images/Vector.png");
+}
