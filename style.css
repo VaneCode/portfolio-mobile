@@ -19,6 +19,16 @@ body {
   background-position: center;
 }
 
+.footer_img {
+  width: 111px;
+  height: 74.02px;
+  align-self: start;
+  background-image: url("./images/img_geometry_header.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: cover;
+}
+
 .nav_flex {
   align-self: center;
   justify-self: flex-end;
@@ -42,6 +52,13 @@ body {
   height: 24px;
   width: 26px;
   background-image: url("./images/ic_download.png");
+}
+
+.icon-get-resume {
+  height: 22px;
+  width: 22px;
+  background-image: url("./images/ic_download_footer.png");
+  margin-left: 5px;
 }
 
 .text_titleH1 {
@@ -111,6 +128,23 @@ body {
   background: #1a2236;
   text-align: center;
   line-height: 50px;
+}
+
+.button-footer {
+  width: 150px;
+  height: 24px;
+  left: 16px;
+  top: 4792px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92dcdc;
+  background-color: #1a2236;
+  border: 0;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 
 .dark_button:hover {
@@ -293,9 +327,10 @@ body {
   grid-template-columns: 288px;
   grid-template-rows: 100px 200px 289px 289px 289px;
   row-gap: 15px;
-  justify-content: start;
+  justify-content: center;
   margin-top: 5px;
   margin-bottom: 5px;
+  width: 320px;
 }
 
 .card-about {
@@ -370,4 +405,142 @@ body {
 
 .card-about-bgimg-source3 {
   background-image: url("./images/bg_skills.png");
+}
+
+.flex-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 320px;
+  border-radius: 4px;
+}
+
+.footer-header {
+  margin: 10px 18px 20px 14px;
+  width: 288px;
+}
+
+form {
+  width: 320px;
+  padding-left: 18px;
+  padding-right: 14px;
+}
+
+.fieldset-style {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-left: 18px;
+  margin-right: 14px;
+}
+
+.label-text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #7d7d84;
+}
+
+.input-text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 4px;
+  outline: none;
+  border: 0;
+}
+
+fieldset:focus {
+  border: 1px solid #1a2236;
+}
+
+.textarea-style {
+  height: 112px;
+  width: 268px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7d7d84;
+  border-radius: 4px;
+  margin-top: 8px;
+  border: 1px solid #dfdfe0;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  margin-right: 14px;
+  padding-left: 16px;
+  padding-top: 15px;
+}
+
+.blue-border:hover {
+  border: 1px solid #1a2236;
+}
+
+textarea:focus {
+  border: 1px solid #1a2236;
+}
+
+.form-button {
+  margin: 20px 18px 64px 14px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  width: 320px;
+  height: 140px;
+  background-color: #1a2236;
+}
+
+.social-icons-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 40px;
+}
+
+.social-icons-list li {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.github {
+  background-image: url("./images/github.png");
+}
+
+.linkedin {
+  background-image: url("./images/linkedin.png");
+}
+
+.stackoverflow {
+  background-image: url("./images/ic_stackoverflow.png");
+  width: 24px;
+  height: 24px;
+}
+
+.twiter {
+  background-image: url("./images/twiter.png");
+}
+
+.m {
+  background-image: url("./images/M.png");
+}
+
+.vector {
+  background-image: url("./images/Vector.png");
 }
