@@ -209,8 +209,8 @@ body {
 
 .grid-works {
   display: grid;
-  grid-template-columns: 320px;
-  grid-template-rows: 100px 342px 342px 342px 342px 342px 342px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto auto auto auto auto auto;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -223,19 +223,18 @@ body {
 .container-work {
   display: flex;
   flex-direction: column;
-  width: 320px;
   height: 342px;
   background-color: #1a2236;
 }
 
 .img-work {
   align-self: auto;
-  width: 320px;
   height: 186px;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: cover;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
 }
 
 .img-work-source1 {
@@ -263,9 +262,9 @@ body {
 }
 
 .flex-work-title {
-  padding-left: 20px;
-  height: 30px;
-  margin-bottom: 5px;
+  padding-left: 2rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .flex-ul-work ul {
@@ -273,9 +272,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 50px;
-  height: 20px;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  height: 2rem;
 }
 
 .ul-work-item {
@@ -655,6 +654,68 @@ textarea:focus {
 
   .item-3 {
     align-self: flex-start;
+  }
+
+  /* Works section */
+  .grid-works {
+    grid-template-areas: 
+    'title project1 project1'
+    'project2 deco-1 project5'
+    'project3 project3 project5'
+    'deco-2 deco-2 project4';
+  }
+
+  .div-title{
+    grid-area: title;
+  }
+
+  .vertical-align{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+
+  }
+
+  #project1{
+    grid-area: project1;
+  }
+
+  #project2{
+    grid-area: project2;
+  }
+
+  .deco-work-1{
+    grid-area: deco-1;
+    background-image: url("./images/deco-works-1.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+  }
+
+  #project5{
+    grid-area: project5;
+  }
+
+  #project6{
+    grid-area: project5;
+  }
+
+  #project3{
+    grid-area: project3;
+  }
+
+  .deco-work-2{
+    grid-area: deco-2;
+    background-image: url("./images/deco-works-2.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+  }
+
+  #project4{
+    grid-area: project4;
   }
 
   /* About section */
