@@ -337,13 +337,11 @@ body {
 .grid-about {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr auto auto auto;
   row-gap: 1.5rem;
   justify-content: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  min-height: fit-content;
-  position:relative;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-about {
@@ -388,8 +386,8 @@ body {
 }
 
 .card-about-abilities {
-  height: 28.9rem;
-  padding-left: 15px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .card-about-backgroundimg {
@@ -649,9 +647,9 @@ textarea:focus {
   .headline-decoration {
     background-image: url("./images/image-geometry_1.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: center;
     background-position: relative;
-    width: 50vw;
+    width: 50%;
     padding-bottom: 80%;
   }
 
@@ -662,46 +660,48 @@ textarea:focus {
   /* About section */
 
   .grid-about {
-    grid-row: auto;
-    grid-column: 50% 50%;
-    width: 100vw;
+    grid-template-areas: 
+    'languages frameworks about'
+    'skills decorative about';
+    padding: 10%;
   }
 
-  .card-about-knownledge{
-    flex-direction: row;
-    flex-wrap: nowrap;
-    grid-column-start: 1;
-    grid-column-end: 2;
+  #languages{
+    grid-area: languages;
   }
 
-  .card-about-abilities{
-    height: 28.9rem;
+  #frameworks{
+    grid-area:frameworks;
+  }
+
+  #skills{
+    grid-area: skills;
   }
 
   .decorative-skills{
+    grid-area: decorative;
     background-image: url("./images/image_dots_with_teal.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right bottom;
-    width: 28.9rem;
+    background-position: relative;
   }
 
   .card-about{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-area: about;
   }
 
   /* Footer section */
-
-  .footer-form{
-    width: 100vw;
-    justify-content: center;
+  footer{
     background-image: url("./images/footer-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom: 0em;
-    overflow: hidden;
+  }
+
+  .footer-form{
+    justify-content: center;
+    margin-right: 20%;
+    margin-left: 20%;
   }
     
   .footer-form h2{
@@ -710,12 +710,7 @@ textarea:focus {
   
   form {
     justify-self: center;
-    flex: 1;
   }
-
-  /*form .fieldset-style .textarea-style{
-    width:51.8rem;
-  }*/
 
   .footer-img-1 {
     display: none;
@@ -726,7 +721,6 @@ textarea:focus {
     justify-content: space-between;
     align-items: center;
     padding-right: 5%;
-    width: 100vw;
   }
 
   .button-footer {
