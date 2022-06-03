@@ -4,7 +4,6 @@ html {
   font-style: normal;
 }
 
-
 body {
   background: #fff;
 }
@@ -579,7 +578,6 @@ textarea:focus {
 /* Media queries */
 
 @media all and (min-width: 768px) {
-
   /* Header section */
 
   .header-img {
@@ -615,7 +613,6 @@ textarea:focus {
     line-height: 24px;
     text-align: right;
     color: #1a2236;
-
   }
 
   /* Headline section */
@@ -658,35 +655,34 @@ textarea:focus {
 
   /* Works section */
   .grid-works {
-    grid-template-areas: 
-    'title project1 project1'
-    'project2 deco-1 project5'
-    'project3 project3 project5'
-    'deco-2 deco-2 project4';
+    grid-template-areas:
+      'title project1 project1'
+      'project2 deco-1 project5'
+      'project3 project3 project5'
+      'deco-2 deco-2 project4';
   }
 
-  .div-title{
+  .div-title {
     grid-area: title;
   }
 
-  .vertical-align{
+  .vertical-align {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     margin-left: 5%;
     margin-right: 10%;
     margin-bottom: 15%;
-
   }
 
-  #project1{
+  #project1 {
     grid-area: project1;
   }
 
-  #project2{
+  #project2 {
     grid-area: project2;
   }
 
-  .deco-work-1{
+  .deco-work-1 {
     grid-area: deco-1;
     background-image: url("./images/deco-works-1.PNG");
     background-repeat: no-repeat;
@@ -694,19 +690,19 @@ textarea:focus {
     background-position: relative;
   }
 
-  #project5{
+  #project5 {
     grid-area: project5;
   }
 
-  #project6{
+  #project6 {
     grid-area: project5;
   }
 
-  #project3{
+  #project3 {
     grid-area: project3;
   }
 
-  .deco-work-2{
+  .deco-work-2 {
     grid-area: deco-2;
     background-image: url("./images/deco-works-2.PNG");
     background-repeat: no-repeat;
@@ -714,32 +710,32 @@ textarea:focus {
     background-position: relative;
   }
 
-  #project4{
+  #project4 {
     grid-area: project4;
   }
 
   /* About section */
 
   .grid-about {
-    grid-template-areas: 
-    'languages frameworks about'
-    'skills decorative about';
+    grid-template-areas:
+      'languages frameworks about'
+      'skills decorative about';
     padding: 10%;
   }
 
-  #languages{
+  #languages {
     grid-area: languages;
   }
 
-  #frameworks{
-    grid-area:frameworks;
+  #frameworks {
+    grid-area: frameworks;
   }
 
-  #skills{
+  #skills {
     grid-area: skills;
   }
 
-  .decorative-skills{
+  .decorative-skills {
     grid-area: decorative;
     background-image: url("./images/image_dots_with_teal.png");
     background-repeat: no-repeat;
@@ -747,28 +743,28 @@ textarea:focus {
     background-position: relative;
   }
 
-  .card-about{
+  .card-about {
     grid-area: about;
   }
 
   /* Footer section */
-  footer{
+  footer {
     background-image: url("./images/footer-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  .footer-form{
+  .footer-form {
     justify-content: center;
     margin-right: 20%;
     margin-left: 20%;
   }
-    
-  .footer-form h2{
+
+  .footer-form h2 {
     align-self: center;
   }
-  
+
   form {
     justify-self: center;
   }
