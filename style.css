@@ -38,7 +38,7 @@ body {
 
 .text-paragraph {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 21px;
   color: #1a2236;
   letter-spacing: -0.01em;
@@ -47,7 +47,7 @@ body {
 
 .text-title-about {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   color: #fff;
 }
@@ -100,7 +100,7 @@ body {
   width: 20px;
 }
 
-/* Headlin section */
+/* Headline section */
 .description-decoration {
   display: none;
 }
@@ -337,12 +337,13 @@ body {
 .grid-about {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 30rem 70rem;
-  row-gap: 15px;
+  grid-template-rows: 1fr auto;
+  row-gap: 1.5rem;
   justify-content: center;
   margin-top: 5px;
   margin-bottom: 5px;
-  width: 320px;
+  min-height: fit-content;
+  position:relative;
 }
 
 .card-about {
@@ -350,7 +351,6 @@ body {
   flex-direction: column;
   align-content: center;
   color: #fff;
-  margin-bottom: 40px;
   margin-left: 1.6rem;
   margin-right: 1.6rem;
 }
@@ -365,9 +365,9 @@ body {
 
 .button-about {
   color: #fff;
-  width: 288px;
-  height: 50px;
-  line-height: 50px;
+  width: 28.8rem;
+  height: 5rem;
+  line-height: 5rem;
   left: 160px;
   top: 715px;
   background: #1a2236;
@@ -378,17 +378,17 @@ body {
   vertical-align: center;
 }
 
-.card-about-knowledge {
+.card-about-knownledge {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   margin-left: 1.6rem;
   margin-right: 1.6rem;
+  gap: 0.5rem;
 }
 
 .card-about-abilities {
-  width: 289px;
-  height: 289px;
+  height: 28.9rem;
   padding-left: 15px;
 }
 
@@ -401,9 +401,9 @@ body {
 }
 
 .title-about {
-  margin: 50px 61px 20px 50px;
-  width: 116px;
-  height: 30px;
+  margin: 5rem 6rem 2rem 5rem;
+  width: 11.6rem;
+  height: 3rem;
 }
 
 .ul-about {
@@ -660,10 +660,35 @@ textarea:focus {
   }
 
   /* About section */
+
   .grid-about {
+    grid-row: auto;
+    grid-column: 50% 50%;
     width: 100vw;
-    grid-row: 1fr;
-    grid-column: 1fr 1fr;
+  }
+
+  .card-about-knownledge{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .card-about-abilities{
+    height: 28.9rem;
+  }
+
+  .decorative-skills{
+    background-image: url("./images/image_dots_with_teal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    width: 28.9rem;
+  }
+
+  .card-about{
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   /* Footer section */
@@ -673,14 +698,14 @@ textarea:focus {
     justify-content: center;
     background-image: url("./images/footer-bg.png");
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: relative;
+    background-size: cover;
+    background-position: center;
     border-bottom: 0em;
     overflow: hidden;
   }
-
-  .footer-form h2, p, form{
-    width:51.8rem;  
+    
+  .footer-form h2{
+    align-self: center;
   }
   
   form {
@@ -688,9 +713,9 @@ textarea:focus {
     flex: 1;
   }
 
-  form .fieldset-style .textarea-style{
+  /*form .fieldset-style .textarea-style{
     width:51.8rem;
-  }
+  }*/
 
   .footer-img-1 {
     display: none;
