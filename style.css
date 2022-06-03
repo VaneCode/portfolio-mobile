@@ -25,7 +25,7 @@ body {
 
 .text-titleH2 {
   font-weight: 300;
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 .text-titleH3 {
@@ -54,7 +54,7 @@ body {
 
 .text-button {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 27px;
   text-align: center;
 }
@@ -137,20 +137,17 @@ body {
 }
 
 .button-footer {
-  width: 150px;
-  height: 24px;
-  left: 16px;
-  top: 4792px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
+  width: 15rem;
+  height: 2.4rem;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   color: #92dcdc;
   background-color: #1a2236;
   border: 0;
   margin-top: 32px;
   margin-left: 16px;
+  margin-bottom: 5%;
 }
 
 .dark_button:hover {
@@ -381,7 +378,7 @@ body {
   vertical-align: center;
 }
 
-.card-about-knowledge{
+.card-about-knowledge {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -439,15 +436,9 @@ body {
 
 /* Footer section */
 
-footer{
+footer {
   margin-top: 10%;
-}
-
-.flex-form-section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  border-radius: 4px;
+  min-width: fit-content;
 }
 
 .footer-img-1 {
@@ -464,23 +455,15 @@ footer{
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-left: 18px;
-  padding-right: 14px;
+  padding-left: 1.8rem;
+  padding-right: 1.4rem;
 }
 
-.footer-form-header {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding-left: 18px;
-  padding-right: 14px;
-}
-
-.footer-form-header h2 {
+.footer-form h2 {
   align-self: flex-start;
 }
 
-.footer-form-header p {
+.footer-form p {
   align-self: center;
 }
 
@@ -488,20 +471,6 @@ form {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-left: 18px;
-  padding-right: 14px;
-}
-
-form h2 {
-  align-self: flex-start;
-  margin-left: 18px;
-  margin-right: 14px;
-}
-
-form p {
-  align-self: center;
-  margin-left: 18px;
-  margin-right: 14px;
 }
 
 .fieldset-style {
@@ -511,8 +480,6 @@ form p {
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   margin-top: 8px;
-  margin-left: 18px;
-  margin-right: 14px;
 }
 
 .label-text {
@@ -523,10 +490,8 @@ form p {
 }
 
 .input-text {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 21px;
   margin-top: 4px;
   outline: none;
@@ -546,10 +511,6 @@ fieldset:focus {
   margin-top: 8px;
   border: 1px solid #dfdfe0;
   margin-bottom: 20px;
-  margin-left: 18px;
-  margin-right: 14px;
-  padding-left: 16px;
-  padding-top: 15px;
 }
 
 .blue-border:hover {
@@ -561,23 +522,25 @@ textarea:focus {
 }
 
 .form-button {
-  margin: 20px 18px 64px 14px;
+  width: 100%;
+  margin-bottom: 15%;
 }
 
 .social-icons {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 140px;
+  min-width: 32rem;
+  height: 14rem;
   background-color: #1a2236;
   align-content: space-between;
+  align-items: space-around;
 }
 
 .social-icons-list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  height: 40px;
 }
 
 .social-icons-list li {
@@ -618,7 +581,7 @@ textarea:focus {
 
 /* Media queries */
 
-@media all and (min-width: 320px) {
+@media all and (min-width: 768px) {
 
   /* Header section */
 
@@ -697,7 +660,7 @@ textarea:focus {
   }
 
   /* About section */
-  .grid-about{
+  .grid-about {
     width: 100vw;
     grid-row: 1fr;
     grid-column: 1fr 1fr;
@@ -705,68 +668,53 @@ textarea:focus {
 
   /* Footer section */
 
-  .flex-form-section {
-    flex-direction: row;
-    margin-top: 50px;
-    border-radius: 4px;
-    justify-content: space-between;
-    flex: 1;
+  .footer-form{
     width: 100vw;
+    justify-content: center;
+    background-image: url("./images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: relative;
+    border-bottom: 0em;
+    overflow: hidden;
   }
 
-  .footer-form {
-    align-self: center;
+  .footer-form h2, p, form{
+    width:51.8rem;  
+  }
+  
+  form {
     justify-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 3;
+    flex: 1;
+  }
+
+  form .fieldset-style .textarea-style{
+    width:51.8rem;
   }
 
   .footer-img-1 {
-    flex: 1;
-    width:60px;
-    height: 150px;
-    align-self: start;
-    justify-content: flex-start;
-    background-image: url("./images/footer-desktop-1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: relative;
-  }
-
-  .footer-img-2 {
-    flex: 1;
-    width:60px;
-    height: 150px;
-    align-self: flex-end;
-    justify-self: flex-end;
-    background-image: url("./images/footer-desktop-2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: relative;
-    padding-right: 0%;
-  }
-
-  form{
-    width: 100%;
-  }
-
-  form h2, button{
-    align-self: center;
+    display: none;
   }
 
   .social-icons {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
     padding-right: 5%;
+    width: 100vw;
   }
 
-  .social-button {
+  .button-footer {
     justify-self: flex-start;
-    flex: 2;
+    flex: 1;
+    width: 10rem;
+  }
+
+  .icon-get-resume {
+    background-image: url("./images/ic-link_teal.png");
+    height: 24px;
+    width: 26px;
+    background-repeat: no-repeat;
   }
 
   .social-icons-list {

@@ -51,7 +51,7 @@
                     </p>
                 </div>
                 <div class="item-3">
-                    <div class="dark_button"> Star collaboration</div>
+                    <div class="dark_button text-button"> Star collaboration</div>
                 </div>
                 <div class="description-decoration"></div>
             </div>
@@ -242,40 +242,36 @@
     </main>
     <!--Footer section-->
     <footer>
-        <section class="flex-form-section">
+        <!--Contact form-->
+        <div class="footer-form">
             <div class="footer-img-1"></div>
-            <div class="footer-form">
-                <form action="https://formspree.io/f/xoqrrrop" method="post">
-                    <h2 class="text-titleH2 text-title">Get started</h2>
-                    <p class="text-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna.
-                    </p>
-                    <fieldset class="fieldset-style blue-border">
-                        <label class="label-text" for="name">Your name</label>
-                        <input type="text" id="name" name="user_name" required="required" maxlength='30'
-                            placeholder="Anastasiia" class="input-text">
-                    </fieldset>
-                    <fieldset class="fieldset-style blue-border">
-                        <label class="label-text" for="email">Your name</label>
-                        <input type="email" id="email" required="required" name="user_email"
-                            placeholder="youremail@outlook.com" class="input-text">
-                    </fieldset>
-                    <textarea class="textarea-style" required="required"
-                        maxlength="500">Enter your message here</textarea>
-                    <button type="submit" class="dark_button form-button">Start collaboration</button>
-                </form>
-            </div>
-            <div class="footer-img-2"></div>
-        </section>
-        <section class="social-icons">
-            <div class="social-button">
-                <button type="button" class="button-footer">
-                    Get my resume
-                    <svg class="icon-get-resume"></svg>
-                </button>
-            </div>
+            <h2 class="text-titleH2 text-title">Get started</h2>
+            <p class="text-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna.
+            </p>
+            <form action="https://formspree.io/f/xoqrrrop" method="post">
+                <fieldset class="fieldset-style blue-border">
+                    <label class="label-text" for="name">Your name</label>
+                    <input type="text" id="name" name="user_name" required="required" maxlength='30'
+                        placeholder="Anastasiia" class="input-text">
+                </fieldset>
+                <fieldset class="fieldset-style blue-border">
+                    <label class="label-text" for="email">Your name</label>
+                    <input type="email" id="email" required="required" name="user_email"
+                        placeholder="youremail@outlook.com" class="input-text">
+                </fieldset>
+                <textarea class="textarea-style" required="required" maxlength="500">Enter your message here</textarea>
+                <button type="submit" class="dark_button form-button">Start collaboration</button>
+            </form>
+        </div>
+        <!--Social icons-->
+        <div class="social-icons">
+            <button type="button" class="button-footer">
+                Get my resume
+                <svg class="icon-get-resume"></svg>
+            </button>
             <ul class="social-icons-list">
                 <li>
                     <a href="">
@@ -308,7 +304,7 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </div>
     </footer>
 </body>
 
