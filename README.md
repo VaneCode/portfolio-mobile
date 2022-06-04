@@ -2,7 +2,7 @@
 
 # Portfolio: setup and mobile version skeleton
 
-> This is a project to setup a mobile version for a portfolio, that contains the hearline
+> This is a project to setup a portfolio, that contains the hearline
 section, works section and about me section.
 
 
@@ -11,6 +11,8 @@ section, works section and about me section.
 - HTML/CSS
 - Visual Studio
 - Flexbox
+- Grid
+- Media queries
 
 ## Author
 

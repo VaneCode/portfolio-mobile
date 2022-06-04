@@ -7,42 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/acbe49dba1.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header class="header_container">
-        <div class="header_img"></div>
-        <nav class="nav_flex">
-            <div class="menu_icon"></div>
+    <!--Headline-->
+    <header class="header-container">
+        <nav class="nav-flex">
+            <div class="header-img"></div>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#">Hello</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="toggle">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </li>
+            </ul>
         </nav>
     </header>
+    <!--Main-->
     <main>
-        <section class="container">
-            <div class="item-1">
-                <h1 class="text_titleH1 item-1">Vanessa Bonito</h1>
+        <section class="headline-section">
+            <div class="headline-description">
+                <div class="item-1">
+                    <h1 class="text-titleH1 text-title item-1">Vanessa Bonito</h1>
+                </div>
+                <div class="item-2">
+                    <p class="text-paragraph">
+                        Hello! I am a software developer! I can help you build a product,
+                        feature or website. Take a look of my works.
+                        If you like what you see and have a project you need coded,
+                        don’t hesitate and contact me.
+                    </p>
+                </div>
+                <div class="item-3">
+                    <button class="dark_button text-button"> Star collaboration</button>
+                </div>
+                <div class="description-decoration"></div>
             </div>
-            <div class="item-2">
-                <p class="text_style">
-                    Hello! I am a software developer! I can help you build a product,
-                    feature or website. Take a look of my works.
-                    If you like what you see and have a project you need coded,
-                    don’t hesitate and contact me.
-                </p>
-            </div>
-            <div class="item-3">
-                <div class="dark_button"> Star collaboration</div>
-            </div>
-            <div class="item-4"></div>
+            <div class="headline-decoration"></div>
         </section>
+        <!--Works section-->
         <section class="grid-works">
-            <div class="div-title">
-                <h2 class="text_titleH2">Projects</h2>
+            <div class="div-title vertical-align">
+                <h2 class="text-titleH2 text-title">Projects</h2>
             </div>
             <div class="container-work" id="project1">
                 <div class="img-work img-work-source1"></div>
                 <div class="div-title flex-work-title">
-                    <h3 class="text_titleH3">Project 1</h3>
+                    <h3 class="text-titleH3">Project 1</h3>
                 </div>
                 <div class="flex-ul-work">
                     <div class="ul-work-item">
@@ -62,10 +85,10 @@
             </div>
             <div class="container-work" id="project2">
                 <div class="img-work img-work-source2"></div>
-                <div class="div-title flex-work-title">
-                    <h3 class="text_titleH3">Project 2</h3>
+                <div class="div-title flex-work-title title-p2">
+                    <h3 class="text-titleH3">Project 2</h3>
                 </div>
-                <div class="flex-ul-work">
+                <div class="flex-ul-work tech-p2">
                     <div class="ul-work-item">
                         <ul class="ul-style">
                             <li class="li-style">HTML/CSS</li>
@@ -74,7 +97,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="button-p2">
                     <button type="button" class="button-work">
                         See this project
                         <svg class="arrow_icon flex-button-icon"></svg>
@@ -83,10 +106,10 @@
             </div>
             <div class="container-work" id="project3">
                 <div class="img-work img-work-source3"></div>
-                <div class="div-title flex-work-title">
-                    <h3 class="text_titleH3">Project 3</h3>
+                <div class="div-title flex-work-title title-p2">
+                    <h3 class="text-titleH3">Project 3</h3>
                 </div>
-                <div class="flex-ul-work">
+                <div class="flex-ul-work tech-p2">
                     <div class="ul-work-item">
                         <ul class="ul-style">
                             <li class="li-style">HTML/CSS</li>
@@ -95,7 +118,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="button-p2">
                     <button type="button" class="button-work">
                         See this project
                         <svg class="arrow_icon flex-button-icon"></svg>
@@ -104,10 +127,10 @@
             </div>
             <div class="container-work" id="project4">
                 <div class="img-work img-work-source4"></div>
-                <div class="div-title flex-work-title">
-                    <h3 class="text_titleH3">Project 4</h3>
+                <div class="div-title flex-work-title title-p2">
+                    <h3 class="text-titleH3">Project 4</h3>
                 </div>
-                <div class="flex-ul-work">
+                <div class="flex-ul-work tech-p2">
                     <div class="ul-work-item">
                         <ul class="ul-style">
                             <li class="li-style">HTML/CSS</li>
@@ -116,7 +139,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="button-p2">
                     <button type="button" class="button-work">
                         See this project
                         <svg class="arrow_icon flex-button-icon"></svg>
@@ -125,10 +148,10 @@
             </div>
             <div class="container-work" id="project5">
                 <div class="img-work img-work-source5"></div>
-                <div class="div-title flex-work-title">
-                    <h3 class="text_titleH3">Project 5</h3>
+                <div class="div-title flex-work-title title-p2">
+                    <h3 class="text-titleH3">Project 5</h3>
                 </div>
-                <div class="flex-ul-work">
+                <div class="flex-ul-work tech-p2">
                     <div class="ul-work-item">
                         <ul class="ul-style">
                             <li class="li-style">HTML/CSS</li>
@@ -137,7 +160,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="button-p2">
                     <button type="button" class="button-work">
                         See this project
                         <svg class="arrow_icon flex-button-icon"></svg>
@@ -147,7 +170,7 @@
             <div class="container-work" id="project6">
                 <div class="img-work img-work-source6"></div>
                 <div class="div-title flex-work-title">
-                    <h3 class="text_titleH3">Project 6</h3>
+                    <h3 class="text-titleH3">Project 6</h3>
                 </div>
                 <div class="flex-ul-work">
                     <div class="ul-work-item">
@@ -165,26 +188,27 @@
                     </button>
                 </div>
             </div>
+            <div class="deco-work-1"></div>
+            <div class="deco-work-2"></div>
         </section>
+        <!--About section-->
         <section class="grid-about">
-            <div class="div-title">
-                <h2 class="text_titleH2">About</h2>
-            </div>
+            <!--About-->
             <div class="card-about">
-                <p class="text_style">
+                <h2 class="text-titleH2 text-title">About</h2>
+                <p class="text-paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ea eiusmod
                 </p>
-                <div>
-                    <button type="button" class="button-about">
-                        Get my CV
-                        <svg class="download_icon icon-about"></svg>
-                    </button>
-                </div>
+                <button type="button" class="button-about">
+                    Get my CV
+                    <svg class="download_icon icon-about"></svg>
+                </button>
             </div>
-            <div class="card-about-abilities card-about-backgroundimg card-about-bgimg-source1">
-                <h3 class="text-tytleAbout title-about">Languages</h3>
+            <!--Languages-->
+            <div id="languages" class="card-about-abilities card-about-backgroundimg card-about-bgimg-source1">
+                <h3 class="text-title-about title-about">Languages</h3>
                 <ul class="ul-about">
                     <li class="li-about">JavaScript (ES5/ES6)</li>
                     <li class="li-about">Ruby</li>
@@ -192,8 +216,9 @@
                     <li class="li-about">CSS</li>
                 </ul>
             </div>
-            <div class="card-about-abilities card-about-backgroundimg card-about-bgimg-source2">
-                <h3 class="text-tytleAbout title-about">Frameworks</h3>
+            <!--Frameworks-->
+            <div id="frameworks" class="card-about-abilities card-about-backgroundimg card-about-bgimg-source2">
+                <h3 class="text-title-about title-about">Frameworks</h3>
                 <ul class="ul-about">
                     <li class="li-about">Bootstrap</li>
                     <li class="li-about">Ruby on rails</li>
@@ -202,8 +227,9 @@
                     <li class="li-about">Selenium</li>
                 </ul>
             </div>
-            <div class="card-about-abilities card-about-backgroundimg card-about-bgimg-source3">
-                <h3 class="text-tytleAbout title-about">Skills</h3>
+            <!--Skills-->
+            <div id="skills" class="card-about-abilities card-about-backgroundimg card-about-bgimg-source3">
+                <h3 class="text-title-about title-about">Skills</h3>
                 <ul class="ul-about">
                     <li class="li-about">CodeKit</li>
                     <li class="li-about">Codepen</li>
@@ -212,18 +238,20 @@
                     <li class="li-about">Terminal</li>
                 </ul>
             </div>
+            <div class="decorative-skills"></div>
         </section>
     </main>
+    <!--Footer section-->
     <footer>
-        <section class="flex-form-section">
-            <div class="footer_img"></div>
-            <div class="footer-header">
-                <h2 class="text_titleH2">Get started</h2>
-                <p class="text_style">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna.
-                </p>
-            </div>
+        <!--Contact form-->
+        <div class="footer-form">
+            <div class="footer-img-1"></div>
+            <h2 class="text-titleH2 text-title">Get started</h2>
+            <p class="text-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna.
+            </p>
             <form action="https://formspree.io/f/xoqrrrop" method="post">
                 <fieldset class="fieldset-style blue-border">
                     <label class="label-text" for="name">Your name</label>
@@ -238,32 +266,31 @@
                 <textarea class="textarea-style" required="required" maxlength="500">Enter your message here</textarea>
                 <button type="submit" class="dark_button form-button">Start collaboration</button>
             </form>
-        </section>
-        <section class="social-icons">
-            <div>
-                <button type="button" class="button-footer">
-                    Get my resume
-                    <svg class="icon-get-resume"></svg>
-                </button>
-            </div>
+        </div>
+        <!--Social icons-->
+        <div class="social-icons">
+            <button type="button" class="button-footer">
+                Get my resume
+                <svg class="icon-get-resume"></svg>
+            </button>
             <ul class="social-icons-list">
                 <li>
-                    <a href="">
-                        <svg class="stackoverflow"></svg>
+                    <a href="https://stackoverflow.com/users/19270605/vanessa-bonito">
+                        <svg class="stackoverflow social-icon"></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://github.com/VaneCode">
                         <svg class="github social-icon"></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://twitter.com/BonitoNarvaez">
                         <svg class="twiter social-icon"></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/vanessa-bonito-narv%C3%A1ez-6681941b5/">
                         <svg class="linkedin social-icon"></svg>
                     </a>
                 </li>
@@ -278,7 +305,7 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </div>
     </footer>
 </body>
 
