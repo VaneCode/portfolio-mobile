@@ -232,7 +232,6 @@ body {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: relative;
   flex-grow: 1;
 }
 
@@ -692,7 +691,6 @@ textarea:focus {
     background-image: url("./images/deco-works-1.PNG");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: relative;
   }
 
   #project5 {
@@ -718,12 +716,16 @@ textarea:focus {
     background-image: url("./images/deco-works-2.PNG");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: relative;
   }
 
   #project4 {
     grid-area: project4;
     margin-left: 20%;
+    width: 60%;
+  }
+
+  #project4 .img-work {
+    background-size: contain;
   }
 
   .title-p2 {
@@ -764,7 +766,6 @@ textarea:focus {
     background-image: url("./images/image_dots_with_teal.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: relative;
   }
 
   .card-about {
