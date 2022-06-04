@@ -190,6 +190,20 @@ body {
   align-self: flex-start;
   margin-top: 5px;
   margin-bottom: 8px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .item-3 {
@@ -315,7 +329,6 @@ body {
 }
 
 .button-work {
-  font-family: 'Poppins', sans-serif;
   background: #1a2236;
   color: #fff;
   display: inline-block;
@@ -327,6 +340,13 @@ body {
   height: 44px;
   border: 1px solid #fff;
   line-height: 44px;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-delay: 0s;
+}
+
+.button-work:hover{
+  font-size: 2rem;
 }
 
 /* About section */
