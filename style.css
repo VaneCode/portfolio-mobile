@@ -216,23 +216,23 @@ body {
 
 .div-title {
   text-align: center;
-  line-height: 100px;
+  line-height: 10rem;
 }
 
 .container-work {
   display: flex;
   flex-direction: column;
-  height: 342px;
+  height: 34.2rem;
   background-color: #1a2236;
 }
 
 .img-work {
   align-self: auto;
-  height: 186px;
+  height: 18.6rem;
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: relative;
   flex-grow: 1;
 }
 
@@ -277,8 +277,8 @@ body {
 }
 
 .ul-work-item {
-  width: 320px;
-  height: 20px;
+  width: 32rem;
+  height: 2rem;
 }
 
 .ul-style {
@@ -286,14 +286,14 @@ body {
 }
 
 .li-style {
-  width: 69px;
-  height: 20px;
+  width: 6.9rem;
+  height: 2rem;
   background: #98dede;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
-  line-height: 20px;
+  line-height: 2rem;
   color: #000;
   text-align: center;
 }
@@ -302,11 +302,11 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-left: 20px;
-  margin-top: 16px;
-  padding-bottom: 3px;
-  width: 178px;
-  height: 44px;
+  margin-left: 2rem;
+  margin-top: 1.6rem;
+  padding-bottom: 0.3rem;
+  width: 17.8rem;
+  height: 4.4rem;
   border: 1px solid #fff;
 }
 
@@ -433,7 +433,7 @@ body {
 /* Footer section */
 
 footer {
-  margin-top: 10%;
+  margin-top: 5%;
   min-width: fit-content;
 }
 
@@ -518,8 +518,7 @@ textarea:focus {
 }
 
 .form-button {
-  width: 100%;
-  margin-bottom: 15%;
+  margin: 0 auto 15%;
 }
 
 .social-icons {
@@ -659,7 +658,7 @@ textarea:focus {
       'title project1 project1'
       'project2 deco-1 project5'
       'project3 project3 project5'
-      'deco-2 deco-2 project4';
+      'deco-2 project4 project4';
   }
 
   .div-title {
@@ -682,6 +681,12 @@ textarea:focus {
     grid-area: project2;
   }
 
+  #project2 .img-work {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .deco-work-1 {
     grid-area: deco-1;
     background-image: url("./images/deco-works-1.PNG");
@@ -696,10 +701,16 @@ textarea:focus {
 
   #project6 {
     grid-area: project5;
+    margin-top: 3%;
+  }
+
+  #project6 .img-work {
+    order: 1;
   }
 
   #project3 {
     grid-area: project3;
+    width: 50vw;
   }
 
   .deco-work-2 {
@@ -712,6 +723,19 @@ textarea:focus {
 
   #project4 {
     grid-area: project4;
+    margin-left: 20%;
+  }
+
+  .title-p2 {
+    display: none;
+  }
+
+  .tech-p2 {
+    display: none;
+  }
+
+  .button-p2 {
+    display: none;
   }
 
   /* About section */
