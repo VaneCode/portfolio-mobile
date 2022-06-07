@@ -1,10 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: setup and mobile version skeleton
+# Portfolio
 
-> This is a project to setup a portfolio, that contains the hearline
-section, works section and about me section.
+> This is a project to setup a portfolio, that contains the headline
+section, works section and about me section. You can find this project published at:
 
+https://vanecode.github.io/portafolio-mobile/
 
 ## Built With
 
