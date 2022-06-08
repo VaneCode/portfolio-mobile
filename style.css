@@ -501,7 +501,7 @@ form {
   font-size: 1rem;
   line-height: 15px;
   font-weight: 400;
-  color: #7d7d84;
+  color: #76767d;
 }
 
 .input-text {
@@ -519,9 +519,10 @@ fieldset:focus {
 
 .textarea-style {
   height: 112px;
-  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
   line-height: 21px;
-  color: #7d7d84;
+  color: #76767d;
   border-radius: 4px;
   margin-top: 8px;
   border: 1px solid #dfdfe0;
