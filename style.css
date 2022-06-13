@@ -64,7 +64,6 @@ body {
 .header-container {
   display: flex;
   flex: 1;
-  position: fixed;
 }
 
 .nav-flex {
@@ -93,13 +92,13 @@ body {
   list-style: none;
 }
 
-#flex-ul {
-  display: none;
-}
-
 .toggle {
   height: 14px;
   width: 20px;
+}
+
+#flex-ul {
+  display: none;
 }
 
 .active #flex-ul {
@@ -110,7 +109,7 @@ body {
   top: 85px;
   left: 0;
   gap: 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(119, 0, 0);
   list-style-type: none;
   height: 100vh;
   width: 100%;
@@ -633,6 +632,10 @@ textarea:focus {
   }
 
   .toggle {
+    display: none;
+  }
+
+  .active {
     display: none;
   }
 
