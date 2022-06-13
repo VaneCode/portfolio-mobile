@@ -14,9 +14,12 @@
 <body>
     <!--Headline-->
     <header class="header-container">
-        <nav class="nav-flex">
+        <nav id="menu-nav" class="nav-flex">
             <div class="header-img"></div>
             <ul class="menu-list">
+                <li class="toggle">
+                    <a id="menu-icon" href="#" onclick="toggleMenu()" aria-label="Navigation menu icon"><i class="fa-solid fa-bars"></i></a>
+                </li>
                 <li class="menu-item">
                     <a href="#">Hello</a>
                 </li>
@@ -27,10 +30,7 @@
                     <a href="#">About</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#">Contact</a>
-                </li>
-                <li class="toggle">
-                    <a href="#" aria-label="Navigation menu icon"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#" >Contact</a>
                 </li>
             </ul>
         </nav>
@@ -307,6 +307,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
