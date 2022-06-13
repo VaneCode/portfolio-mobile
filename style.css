@@ -2,6 +2,7 @@ html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -63,6 +64,7 @@ body {
 .header-container {
   display: flex;
   flex: 1;
+  position: fixed;
 }
 
 .nav-flex {
@@ -120,6 +122,10 @@ body {
   text-decoration: none;
   font-size: 3em;
   color: black;
+}
+
+.active #menu-icon img{
+ content: url("images/ic_cross.svg");
 }
 
 /* Headline section */
@@ -633,14 +639,19 @@ textarea:focus {
   .nav-flex {
     justify-content: center;
     height: 20%;
+    width: 100%;
   }
 
-  .menu-list {
+  .menu-list #flex-ul {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    gap: 5rem;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
+    background-color: red;
   }
 
   .menu-item {
