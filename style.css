@@ -2,6 +2,7 @@ html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -86,17 +87,44 @@ body {
 .menu-list {
   display: flex;
   order: 2;
+  flex-direction: column;
   justify-self: flex-end;
   list-style: none;
-}
-
-.menu-item {
-  display: none;
 }
 
 .toggle {
   height: 14px;
   width: 20px;
+}
+
+#flex-ul {
+  display: none;
+}
+
+.active #flex-ul {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  gap: 3rem;
+  list-style-type: none;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #fff;
+}
+
+.active #flex-ul a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.active #menu-icon img {
+  content: url("images/ic_cross.svg");
 }
 
 /* Headline section */
@@ -607,17 +635,24 @@ textarea:focus {
     display: none;
   }
 
+  .active {
+    display: none;
+  }
+
   .nav-flex {
     justify-content: center;
     height: 20%;
+    width: 100%;
   }
 
-  .menu-list {
+  .menu-list #flex-ul {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    gap: 5rem;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
   }
 
   .menu-item {

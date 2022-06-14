@@ -14,30 +14,36 @@
 <body>
     <!--Headline-->
     <header class="header-container">
-        <nav class="nav-flex">
+        <nav id="menu-nav" class="nav-flex">
             <div class="header-img"></div>
             <ul class="menu-list">
-                <li class="menu-item">
-                    <a href="#">Hello</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">Portfolio</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">About</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">Contact</a>
-                </li>
                 <li class="toggle">
-                    <a href="#" aria-label="Navigation menu icon"><i class="fa-solid fa-bars"></i></a>
+                    <a id="menu-icon" href="#" aria-label="Navigation menu icon">
+                        <img src="images/ic_menu.png" alt="main menu">
+                    </a>
+                </li>
+                <li>
+                    <ul id="flex-ul">
+                        <li class="menu-item">
+                            <a href="#home-section" class="menu-option" onclick="closeMenu()">Hello</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#works-section" class="menu-option" onclick="closeMenu()">Portfolio</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#about-section" class="menu-option" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#contact-section" class="menu-option" onclick="closeMenu()">Contact</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
     </header>
     <!--Main-->
     <main>
-        <section class="headline-section">
+        <section id="home-section" class="headline-section">
             <div class="headline-description">
                 <div class="item-1">
                     <h1 class="text-titleH1 text-title item-1">Vanessa Bonito</h1>
@@ -51,14 +57,14 @@
                     </p>
                 </div>
                 <div class="item-3">
-                    <button class="dark_button text-button"> Star collaboration</button>
+                    <button class="dark_button text-button" type="button"> Star collaboration</button>
                 </div>
                 <div class="description-decoration"></div>
             </div>
             <div class="headline-decoration"></div>
         </section>
         <!--Works section-->
-        <section class="grid-works">
+        <section id="works-section" class="grid-works">
             <div class="div-title vertical-align">
                 <h2 class="text-titleH2 text-title">Projects</h2>
             </div>
@@ -192,7 +198,7 @@
             <div class="deco-work-2"></div>
         </section>
         <!--About section-->
-        <section class="grid-about">
+        <section id="about-section" class="grid-about">
             <!--About-->
             <div class="card-about">
                 <h2 class="text-titleH2 text-title">About</h2>
@@ -244,7 +250,7 @@
     <!--Footer section-->
     <footer>
         <!--Contact form-->
-        <div class="footer-form">
+        <div id="contact-section" class="footer-form">
             <div class="footer-img-1"></div>
             <h2 class="text-titleH2 text-title">Get started</h2>
             <p class="text-paragraph">
@@ -307,6 +313,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
