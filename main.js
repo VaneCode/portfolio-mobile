@@ -1,6 +1,7 @@
 const menuNav = document.querySelector('#menu-nav');
 const menuIcon = document.querySelector('#menu-icon');
 const menuOption = document.getElementsByClassName('menu-option');
+let projectIdModal = 1;
 
 function openMenu() {
   menuNav.classList.toggle('active');
@@ -21,6 +22,10 @@ const projects = [
     name: 'Project 1',
     featuredImage: 'images/project_1.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'RubyJavaScript'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut'+
+    'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip'+ 
+    'ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'+
+    'ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     linkLiveVersion: 'www.google.com',
     linkSource: 'www.github.com'
   },
@@ -72,62 +77,78 @@ projects.forEach((project, index) => {
   //Div projects
   let divProject = document.createElement('div');
   divProject.setAttribute("class", "container-work");
-  divProject.setAttribute('id',`project${project.projectID}`);
+  divProject.setAttribute('id', `project${project.projectID}`);
   //Div project image
   let divProjectImage = document.createElement('div');
-  let classImg ="img-work img-work-source";
+  let classImg = "img-work img-work-source";
   let imgNumber = project.projectID;
-  classImg=classImg.concat(imgNumber);
+  classImg = classImg.concat(imgNumber);
   console.log(classImg);
   divProjectImage.setAttribute("class", classImg);
   divProject.appendChild(divProjectImage);
-   //Div project name
-   let divProjectName = document.createElement('div');
-   if(project.projectID==1 || project.projectID==6){
-    divProjectName.setAttribute('class','div-title flex-work-title');
-   }else{
-    divProjectName.setAttribute('class','div-title flex-work-title title-p2');
-   }
-   let projectName = document.createElement('h3');
-   projectName.setAttribute('class','text-titleH3');
-   let projectNameText = document.createTextNode(project.name);
-   projectName.appendChild(projectNameText);
-   divProjectName.appendChild(projectName);
-   divProject.appendChild(divProjectName)
-    //Div for flex technologies
-    let divFlexTech = document.createElement('div');
+  //Div project name
+  let divProjectName = document.createElement('div');
+  if (project.projectID == 1 || project.projectID == 6) {
+    divProjectName.setAttribute('class', 'div-title flex-work-title');
+  } else {
+    divProjectName.setAttribute('class', 'div-title flex-work-title title-p2');
+  }
+  let projectName = document.createElement('h3');
+  projectName.setAttribute('class', 'text-titleH3');
+  let projectNameText = document.createTextNode(project.name);
+  projectName.appendChild(projectNameText);
+  divProjectName.appendChild(projectName);
+  divProject.appendChild(divProjectName)
+  //Div for flex technologies
+  let divFlexTech = document.createElement('div');
+  if (project.projectID == 1 || project.projectID == 6) {
     divFlexTech.setAttribute('class', 'flex-ul-work');
-     //Div UL technologies
-     let divUlTech = document.createElement('div');
-     divUlTech.setAttribute('class', "ul-work-item");
-     divFlexTech.appendChild(divUlTech);
-      //Technologis ul
-      let techUl = document.createElement('ul');
-      techUl.setAttribute("class", "ul-style");
-      let techs = project.technologies;
-      techs.forEach((tech) => {
-      let liTech = document.createElement('li');
-      liTech.setAttribute('class', "li-style")
-      let liText = document.createTextNode(tech);
-      liTech.appendChild(liText);
-      techUl.appendChild(liTech);
-      divUlTech.appendChild(techUl);
-      divProject.appendChild(divFlexTech);
-      })
-       //Div for buttoms (project)
-       let divBtnProject = document.createElement('div');
-       let btnProject = document.createElement('button');
-       btnProject.setAttribute('type', "button");
-       btnProject.setAttribute('class', "button-work");
-       btnProject.setAttribute('id',project.projectID);
-       let textbtnProject = document.createTextNode('See this project');
-       let svgIcon = document.createElement('svg');
-       svgIcon.setAttribute('class', "arrow_icon flex-button-icon");
-       btnProject.appendChild(textbtnProject);
-       btnProject.appendChild(svgIcon);
-       divBtnProject.appendChild(btnProject);
-       divProject.appendChild(divBtnProject);
-        //All divs inside of the Card div
-        dinamicProjects.appendChild(divProject)
-  });
+  } else {
+    divFlexTech.setAttribute('class', ' flex-ul-work tech-p2');
+  }
+  //Div UL technologies
+  let divUlTech = document.createElement('div');
+  divUlTech.setAttribute('class', "ul-work-item");
+  divFlexTech.appendChild(divUlTech);
+  //Technologis ul
+  let techUl = document.createElement('ul');
+  techUl.setAttribute("class", "ul-style");
+  let techs = project.technologies;
+  techs.forEach((tech) => {
+    let liTech = document.createElement('li');
+    liTech.setAttribute('class', "li-style")
+    let liText = document.createTextNode(tech);
+    liTech.appendChild(liText);
+    techUl.appendChild(liTech);
+    divUlTech.appendChild(techUl);
+    divProject.appendChild(divFlexTech);
+  })
+  //Div for buttoms (project)
+  let divBtnProject = document.createElement('div');
+  if (project.projectID != 1 && project.projectID != 6) {
+    divBtnProject.setAttribute('class', 'button-p2');
+  }
+  let btnProject = document.createElement('button');
+  btnProject.setAttribute('type', "button");
+  btnProject.setAttribute('class', "button-work");
+  btnProject.setAttribute('id', project.projectID);
+  let textbtnProject = document.createTextNode(' See this project ');
+  let svgIcon = document.createElement('svg');
+  svgIcon.setAttribute('class', "arrow_icon flex-button-icon");
+  btnProject.appendChild(textbtnProject);
+  btnProject.appendChild(svgIcon);
+  divBtnProject.appendChild(btnProject);
+  divProject.appendChild(divBtnProject);
+  //All divs inside of the Card div
+  dinamicProjects.appendChild(divProject)
+});
+
+//Modals
+
+//function to fill project's detail modal
+
+//function to clean project's detail modal
+
+//function to open modal's project
+
 
