@@ -74,12 +74,16 @@ projects.forEach((project, index) => {
   divProject.setAttribute("class", "container-work");
   //Div project image
   let divProjectImage = document.createElement('div');
-  divProjectImage.setAttribute("class", "img-work");
-  divProjectImage.style.backgroundImage(project.featuredImage);
+  let classImg ="img-work img-work-source";
+  let imgNumber = project.projectID;
+  classImg=classImg.concat(imgNumber);
+  console.log(classImg);
+  divProjectImage.setAttribute("class", classImg);
   divProject.appendChild(divProjectImage);
    //Div project name
    let divProjectName = document.createElement('div');
    let projectName = document.createElement('h3');
+   projectName.setAttribute('class','text-titleH3');
    let projectNameText = document.createTextNode(project.name);
    projectName.appendChild(projectNameText);
    divProjectName.appendChild(projectName);
@@ -109,13 +113,14 @@ projects.forEach((project, index) => {
        let btnProject = document.createElement('button');
        btnProject.setAttribute('type', "button");
        btnProject.setAttribute('class', "button-work");
+       btnProject.setAttribute('id',project.projectID);
        let textbtnProject = document.createTextNode('See this project');
        let svgIcon = document.createElement('svg');
        svgIcon.setAttribute('class', "arrow_icon flex-button-icon");
        btnProject.appendChild(svgIcon);
        btnProject.appendChild(textbtnProject);
        divBtnProject.appendChild(btnProject);
-       divProject.appendChild(divBtnProject)
+       divProject.appendChild(divBtnProject);
         //All divs inside of the Card div
         dinamicProjects.appendChild(divProject)
   });
