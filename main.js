@@ -17,7 +17,7 @@ menuOption.onclick = function () { closeMenu(); };
 //Projects array objects
 const projects = [
   {
-    projectID: 0,
+    projectID: 1,
     name: 'Project 1',
     featuredImage: 'images/project_1.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'RubyJavaScript'],
@@ -25,7 +25,7 @@ const projects = [
     linkSource: 'www.github.com'
   },
   {
-    projectID: 1,
+    projectID: 2,
     name: 'Project 2',
     featuredImage: 'images/project_2.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'RubyJavaScript'],
@@ -33,7 +33,7 @@ const projects = [
     linkSource: 'www.github.com'
   },
   {
-    projectID: 2,
+    projectID: 3,
     name: 'Project 3',
     featuredImage: 'images/project_3.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'RubyJavaScript'],
@@ -41,7 +41,7 @@ const projects = [
     linkSource: 'www.github.com'
   },
   {
-    projectID: 3,
+    projectID: 4,
     name: 'Project 4',
     featuredImage: 'images/project_4.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'RubyJavaScript'],
@@ -49,7 +49,7 @@ const projects = [
     linkSource: 'www.github.com'
   },
   {
-    projectID: 4,
+    projectID: 5,
     name: 'Project 5',
     featuredImage: 'images/project_5.png',
     technologies: ['HTML/CSS', 'Ruby on rails', 'RubyJavaScript'],
@@ -57,7 +57,7 @@ const projects = [
     linkSource: 'www.github.com'
   },
   {
-    projectID: 5,
+    projectID: 6,
     name: 'Project 6',
     featuredImage: 'images/project_6.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'RubyJavaScript'],
@@ -72,6 +72,7 @@ projects.forEach((project, index) => {
   //Div projects
   let divProject = document.createElement('div');
   divProject.setAttribute("class", "container-work");
+  divProject.setAttribute('id',`project${project.projectID}`);
   //Div project image
   let divProjectImage = document.createElement('div');
   let classImg ="img-work img-work-source";
@@ -117,8 +118,8 @@ projects.forEach((project, index) => {
        let textbtnProject = document.createTextNode('See this project');
        let svgIcon = document.createElement('svg');
        svgIcon.setAttribute('class', "arrow_icon flex-button-icon");
-       btnProject.appendChild(svgIcon);
        btnProject.appendChild(textbtnProject);
+       btnProject.appendChild(svgIcon);
        divBtnProject.appendChild(btnProject);
        divProject.appendChild(divBtnProject);
         //All divs inside of the Card div
