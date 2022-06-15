@@ -83,6 +83,11 @@ projects.forEach((project, index) => {
   divProject.appendChild(divProjectImage);
    //Div project name
    let divProjectName = document.createElement('div');
+   if(project.projectID==1 || project.projectID==6){
+    divProjectName.setAttribute('class','div-title flex-work-title');
+   }else{
+    divProjectName.setAttribute('class','div-title flex-work-title title-p2');
+   }
    let projectName = document.createElement('h3');
    projectName.setAttribute('class','text-titleH3');
    let projectNameText = document.createTextNode(project.name);
