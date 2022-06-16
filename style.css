@@ -543,6 +543,12 @@ form {
   border: 0;
 }
 
+.error-form {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ff3860;
+}
+
 fieldset:focus {
   border: 1px solid #1a2236;
 }
@@ -569,6 +575,7 @@ textarea:focus {
 
 .form-button {
   margin: 0 auto 15%;
+  margin-top: 25px;
 }
 
 .social-icons {
@@ -626,7 +633,7 @@ textarea:focus {
 
 /* Modals */
 .modal-container {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(26, 34, 54, 0.95);
   align-items: center;
   position: fixed;
   top: 0;
