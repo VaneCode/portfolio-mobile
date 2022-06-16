@@ -231,45 +231,60 @@ function createModalProjectContent(id) {
   projectDespcriptionDiv.appendChild(projectBtnCointaner1)
   // Project see live button
   const seeLiveBtn = document.createElement('button');
-  const iconSeeLiveBtn = document.createElement('svg');
-  iconSeeLiveBtn.setAttribute('class', 'icon-see-live');
-  seeLiveBtn.appendChild(iconSeeLiveBtn);
-  const textSeeLiveBtn = document.createTextNode('See live');
-  seeLiveBtn.appendChild(textSeeLiveBtn);
   seeLiveBtn.setAttribute('class', 'modal-buttons');
+  const textSeeLiveBtn = document.createTextNode('See live');
+  seeLiveBtn.appendChild(textSeeLiveBtn); 
+  const textSeeLiveBtnDiv = document.createElement('div');
+  textSeeLiveBtnDiv.setAttribute('class', 'text-modal-bottons');
+  textSeeLiveBtnDiv.appendChild(textSeeLiveBtn);
+  seeLiveBtn.appendChild(textSeeLiveBtnDiv);
+  const iconSeeLiveBtn = document.createElement('div');
+  iconSeeLiveBtn.setAttribute('class', 'icon-see-live icon-btn-modal');
+  iconSeeLiveBtn.setAttribute('id', 'icon-see-live-div');
+  seeLiveBtn.appendChild(iconSeeLiveBtn);
   projectBtnCointaner1.appendChild(seeLiveBtn);
   // Project see source button
   const seeSourceBtn = document.createElement('button');
-  const iconSeeSourceBtn = document.createElement('svg');
-  iconSeeSourceBtn.setAttribute('class', 'icon-see-source');
-  seeSourceBtn.appendChild(iconSeeLiveBtn);
-  const textSeeSourceBtn = document.createTextNode('See source');
-  seeSourceBtn.appendChild(textSeeSourceBtn);
   seeSourceBtn.setAttribute('class', 'modal-buttons');
+  const textSeeSourceBtn = document.createTextNode('See source');
+  const textSeeSourceBtnDiv = document.createElement('div');
+  textSeeSourceBtnDiv.setAttribute('class', 'text-modal-bottons');
+  textSeeSourceBtnDiv.appendChild(textSeeSourceBtn);
+  seeSourceBtn.appendChild(textSeeSourceBtnDiv);
+  const iconSeeSourceBtn = document.createElement('div');
+  iconSeeSourceBtn.setAttribute('class', 'icon-see-source icon-btn-modal');
+  iconSeeSourceBtn.setAttribute('id', 'icon-see-source-div');
+  seeSourceBtn.appendChild(iconSeeSourceBtn);
   projectBtnCointaner1.appendChild(seeSourceBtn);
   projectDetailsModal.appendChild(projectBtnCointaner1);
-  // Project div see live button and see source button
+  // Project div previous button and next button
   const projectBtnCointaner2 = document.createElement('div');
   projectBtnCointaner2.setAttribute('class', 'div-btn-modal2');
   projectBtnCointaner2.setAttribute('id', 'btn-container-2');
   // Project previous project button
   const prevProjectBtn = document.createElement('button');
-  const iconPrevProject = document.createElement('svg');
-  iconPrevProject.setAttribute('class', 'icon-previous');
+  prevProjectBtn.setAttribute('class', 'modal-buttons-prev');
+  const iconPrevProject = document.createElement('div');
+  iconPrevProject.setAttribute('class', 'icon-previous icon-btn-modal');
   prevProjectBtn.appendChild(iconPrevProject);
   const textPrevProject = document.createTextNode('Previous');
-  prevProjectBtn.appendChild(textPrevProject);
-  prevProjectBtn.setAttribute('class', 'modal-buttons-prev');
+  const textPrevProjectDiv = document.createElement('div');
+  textPrevProjectDiv.setAttribute('class', 'text-modal-bottons');
+  textPrevProjectDiv.appendChild(textPrevProject);
+  prevProjectBtn.appendChild(textPrevProjectDiv);
   prevProjectBtn.setAttribute('id', 'prev-btn');
   projectBtnCointaner2.appendChild(prevProjectBtn);
-  // Project previous project button
+  // Project next project button
   const nextProjectBtn = document.createElement('button');
-  const iconNextProject = document.createElement('svg');
-  iconNextProject.setAttribute('class', 'icon-next');
-  nextProjectBtn.appendChild(iconNextProject);
-  const textNextProject = document.createTextNode('Next');
-  nextProjectBtn.appendChild(textNextProject);
   nextProjectBtn.setAttribute('class', 'modal-buttons-prev');
+  const textNextProject = document.createTextNode('Next');
+  const textNextProjectDiv = document.createElement('div');
+  textNextProjectDiv.setAttribute('class', 'text-modal-bottons');
+  textNextProjectDiv.appendChild(textNextProject);
+  nextProjectBtn.appendChild(textNextProjectDiv);
+  const iconNextProject = document.createElement('div');
+  iconNextProject.setAttribute('class', 'icon-next icon-btn-modal');
+  nextProjectBtn.appendChild(iconNextProject);
   nextProjectBtn.setAttribute('id', 'next-btn');
   projectBtnCointaner2.appendChild(nextProjectBtn);
   projectDetailsModal.appendChild(projectBtnCointaner2);

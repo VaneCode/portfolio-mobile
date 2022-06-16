@@ -11,9 +11,7 @@ https://vanecode.github.io/portafolio-mobile/
 
 - HTML/CSS
 - Visual Studio
-- Flexbox
-- Grid
-- Media queries
+- JavaScript
 
 ## Author
 

@@ -152,30 +152,6 @@ body {
   background-image: url("./images/ic_download_footer.png");
 }
 
-.icon-see-live {
-  height: 2.2rem;
-  width: 2.2rem;
-  background-image: url("./images/seeLiveIcon.png");
-}
-
-.icon-see-source {
-  height: 2.2rem;
-  width: 2.2rem;
-  background-image: url("./images/seeSourceIcon.png");
-}
-
-.icon-next {
-  height: 2.2rem;
-  width: 2.2rem;
-  background-image: url("./images/next.png");
-}
-
-.icon-previous {
-  height: 2.2rem;
-  width: 2.2rem;
-  background-image: url("./images/previous.png");
-}
-
 /* Buttons */
 
 .dark_button {
@@ -443,7 +419,7 @@ body {
 }
 
 .icon-about {
-  margin-left: 6px;
+  margin-left: 0.6rem;
   vertical-align: center;
 }
 
@@ -697,7 +673,7 @@ textarea:focus {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 2rem;
   line-height: 80%;
 }
 
@@ -740,14 +716,23 @@ textarea:focus {
 }
 
 .modal-buttons {
+  align-self: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10rem;
   color: #1a2236;
   width: 24.6rem;
   height: 5rem;
   background: #fff;
-  text-align: center;
+  vertical-align: middle;
   line-height: 5rem;
   border: 2px solid #1a2236;
   font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.text-modal-bottons{
   align-self: center;
 }
 
@@ -755,6 +740,15 @@ textarea:focus {
   background: #1a2236;
   color: #fff;
 }
+
+.modal-buttons:hover #icon-see-source-div {
+  background-image: url("./images/github.png");
+}
+
+.modal-buttons:hover #icon-see-live-div {
+  background-image: url("./images/ic_download.png");
+}
+
 
 .modal-buttons-prev {
   display: none;
@@ -766,6 +760,30 @@ textarea:focus {
   justify-content: center;
   gap: 3rem;
 }
+
+.icon-btn-modal {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-see-live {
+  background-image: url("./images/seeLiveIcon.png");
+}
+
+.icon-see-source {
+  background-image: url("./images/seeSourceIcon.png");
+}
+
+.icon-next {
+  background-image: url("./images/next.png");
+}
+
+.icon-previous {
+  background-image: url("./images/previous.png");
+}
+
 
 @keyframes modal {
   from {
@@ -1038,11 +1056,17 @@ textarea:focus {
 
   /* Modals */
   .modal-content {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .text-titleModal {
     font-size: 7rem;
+  }
+
+  .ul-modal {
+    align-self: flex-start;
+    padding: 0;
   }
 
   .description-project {
@@ -1068,16 +1092,24 @@ textarea:focus {
   }
 
   .modal-buttons-prev {
-    display: inline;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
     color: #1a2236;
     width: 24.6rem;
     height: 5rem;
     background: #fff;
-    text-align: center;
+    vertical-align: middle;
     line-height: 5rem;
     font-size: 2rem;
-    align-self: center;
     border: none;
+    padding: 1rem;    
+  }
+
+  .text-modal-bottons{
+    align-self: center;
   }
 
   .modal-header {
@@ -1085,7 +1117,7 @@ textarea:focus {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 0;
   }
 
   .close-modal-button {
