@@ -228,6 +228,7 @@ function createModalProjectContent(id) {
   const projectBtnCointaner1 = document.createElement('div');
   projectBtnCointaner1.setAttribute('class', 'div-btn-modal1');
   projectBtnCointaner1.setAttribute('id', 'btn-container-2');
+  projectDespcriptionDiv.appendChild(projectBtnCointaner1)
   // Project see live button
   const seeLiveBtn = document.createElement('button');
   const iconSeeLiveBtn = document.createElement('svg');

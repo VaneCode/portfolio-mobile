@@ -650,33 +650,35 @@ textarea:focus {
 
 /* Modals */
 .modal-container {
-  background-color: rgba(26, 34, 54, 0.95);
+  background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
-  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 2000;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
   display: none;
 }
 
 .modal-container.showUp {
   display: flex;
+  flex-direction: column;
 }
 
 .modal-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: white;
-  padding: 1rem;
-  max-height: 90%;
-  max-width: 90%;
-  gap: 1.5rem;
+  padding: 10px;
+  gap: 15px;
   animation: modal 0.5s;
-  overflow: auto;
+  position: relative;
+  border-radius: 5px;
+  margin: 2%;
 }
 
 .modal-header {
@@ -692,32 +694,30 @@ textarea:focus {
 }
 
 .text-titleModal {
-  font-weight: 150;
-  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
   line-height: 80%;
-  color: #1a2236;
-  text-align: center;
 }
 
 .img-work-modal {
   align-self: auto;
-  height: 40rem;
   flex-grow: 1;
 }
 
 .img-modal {
   width: 100%;
-  height: 100%;
 }
 
 .ul-modal {
   display: flex;
+  flex-direction: row;
   list-style-type: none;
   gap: 1rem;
 }
 
 .ul-modal li {
-  margin: 0;
   padding: 15px;
   background: #fff;
   font-family: 'Poppins', sans-serif;
@@ -765,6 +765,18 @@ textarea:focus {
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /* Media queries */
@@ -1034,17 +1046,17 @@ textarea:focus {
   }
 
   .description-project {
-    margin-right: 20%;
-    margin-left: 20%;
+    width: 600px;
+    margin: auto;
   }
 
   .div-btn-modal1 {
     display: flex;
     flex-direction: row;
-    justify-items: flex-start;
+    justify-content: flex-start;
     gap: 3rem;
-    margin-right: 20%;
-    margin-left: 20%;
+    width: 600px;
+    margin: auto;
   }
 
   .div-btn-modal2 {
