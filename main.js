@@ -170,7 +170,7 @@ const projectDetailsModal = document.querySelector('#project-details-modal');
 function createModalProjectContent(id) {
   projectIdModal = id;
   // Search the project with the same id in the projects array
-  const project = projects.find((project) => project.projectID === id);
+  const project = projects.find((project) => Number(project.projectID) === Number(id));
   // Project div headar
   const header = document.createElement('div');
   header.setAttribute('class', 'modal-header');
@@ -307,18 +307,18 @@ projectDetailsModal.addEventListener('click', (e) => {
   if (elementId === 'close-button') {
     projectModalContainer.classList.remove('showUp');
   } else if (elementId === 'prev-btn') {
-    if (projectIdModal === 1) {
+    if (Number(projectIdModal) === Number(1)) {
       projectIdModal = 6;
     } else {
-      projectIdModal -= projectIdModal;
+      projectIdModal -= 1;
     }
     cleanModal(projectDetailsModal.id);
     createModalProjectContent(projectIdModal);
   } else if (elementId === 'next-btn') {
-    if (projectIdModal === 6) {
+    if (Number(projectIdModal) === Number(6)) {
       projectIdModal = 1;
     } else {
-      projectIdModal++;
+      projectIdModal += 1;
     }
     cleanModal(projectDetailsModal.id);
     createModalProjectContent(projectIdModal);

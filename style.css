@@ -176,7 +176,6 @@ body {
   background-image: url("./images/previous.png");
 }
 
-
 /* Buttons */
 
 .dark_button {
@@ -652,7 +651,6 @@ textarea:focus {
 /* Modals */
 .modal-container {
   background-color: rgba(26, 34, 54, 0.95);
-  display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -681,7 +679,7 @@ textarea:focus {
   overflow: auto;
 }
 
-.modal-header{
+.modal-header {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -692,7 +690,6 @@ textarea:focus {
   background: #fff;
   align-self: flex-end;
 }
-
 
 .text-titleModal {
   font-weight: 150;
@@ -1071,14 +1068,17 @@ textarea:focus {
     border: none;
   }
 
-  .modal-header{
+  .modal-header {
     flex-direction: row;
     width: 100%;
+    align-items: center;
     justify-content: space-between;
+    margin-top: 3rem;
   }
 
-  .close-modal-button{
+  .close-modal-button {
+    justify-self: flex-end;
+    align-self: center;
     order: 2;
   }
-
 }
