@@ -228,12 +228,12 @@ function createModalProjectContent(id) {
   const projectBtnCointaner1 = document.createElement('div');
   projectBtnCointaner1.setAttribute('class', 'div-btn-modal1');
   projectBtnCointaner1.setAttribute('id', 'btn-container-2');
-  projectDespcriptionDiv.appendChild(projectBtnCointaner1)
+  projectDespcriptionDiv.appendChild(projectBtnCointaner1);
   // Project see live button
   const seeLiveBtn = document.createElement('button');
   seeLiveBtn.setAttribute('class', 'modal-buttons');
   const textSeeLiveBtn = document.createTextNode('See live');
-  seeLiveBtn.appendChild(textSeeLiveBtn); 
+  seeLiveBtn.appendChild(textSeeLiveBtn);
   const textSeeLiveBtnDiv = document.createElement('div');
   textSeeLiveBtnDiv.setAttribute('class', 'text-modal-bottons');
   textSeeLiveBtnDiv.appendChild(textSeeLiveBtn);
