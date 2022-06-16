@@ -544,8 +544,9 @@ form {
 }
 
 .error-form {
-  margin-top: -30px;
-  color: red;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ff3860;
 }
 
 fieldset:focus {
@@ -574,6 +575,7 @@ textarea:focus {
 
 .form-button {
   margin: 0 auto 15%;
+  margin-top: 25px;
 }
 
 .social-icons {

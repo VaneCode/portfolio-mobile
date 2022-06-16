@@ -344,16 +344,16 @@ projectDetailsModal.addEventListener('click', (e) => {
 //-----------------Form validation------------------//
 const contactFrm = document.getElementById('contactFrm');
 
-
 function validationFrm(event) {
   const email = document.getElementById('email');
-  const error = document.getElementById('error-email');
+  const emailValue = email.value.trim();
+  const error = document.getElementById('error');
 
-  if (email !== email.toLowerCase()) {
-    error.textContent = 'Please enter your email in lower case.';
+  if (emailValue !== emailValue.toLowerCase()) {
+    error.innerHTML = 'Please enter your email in lower case.';
     event.preventDefault();
   } else {
-    error.textContent = '';
+    error.innerHTML = '';
   }
 }
 
