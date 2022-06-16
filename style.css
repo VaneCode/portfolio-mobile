@@ -543,6 +543,11 @@ form {
   border: 0;
 }
 
+.error-form {
+  margin-top: -30px;
+  color: red;
+}
+
 fieldset:focus {
   border: 1px solid #1a2236;
 }
@@ -626,7 +631,7 @@ textarea:focus {
 
 /* Modals */
 .modal-container {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(26, 34, 54, 0.95);
   align-items: center;
   position: fixed;
   top: 0;

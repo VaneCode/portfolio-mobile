@@ -340,3 +340,21 @@ projectDetailsModal.addEventListener('click', (e) => {
     createModalProjectContent(projectIdModal);
   }
 });
+
+//-----------------Form validation------------------//
+const contactFrm = document.getElementById('contactFrm');
+
+
+function validationFrm(event) {
+  const email = document.getElementById('email');
+  const error = document.getElementById('error-email');
+
+  if (email !== email.toLowerCase()) {
+    error.textContent = 'Please enter your email in lower case.';
+    event.preventDefault();
+  } else {
+    error.textContent = '';
+  }
+}
+
+contactFrm.addEventListener('submit', validationFrm);
