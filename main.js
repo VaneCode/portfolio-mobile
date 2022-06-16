@@ -341,7 +341,7 @@ projectDetailsModal.addEventListener('click', (e) => {
   }
 });
 
-//-----------------Form validation------------------//
+// -----------------Form validation------------------//
 const contactFrm = document.getElementById('contactFrm');
 
 function validationFrm(event) {
