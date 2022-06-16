@@ -732,7 +732,7 @@ textarea:focus {
   padding: 1rem;
 }
 
-.text-modal-bottons{
+.text-modal-bottons {
   align-self: center;
 }
 
@@ -748,7 +748,6 @@ textarea:focus {
 .modal-buttons:hover #icon-see-live-div {
   background-image: url("./images/ic_download.png");
 }
-
 
 .modal-buttons-prev {
   display: none;
@@ -783,7 +782,6 @@ textarea:focus {
 .icon-previous {
   background-image: url("./images/previous.png");
 }
-
 
 @keyframes modal {
   from {
@@ -1105,10 +1103,10 @@ textarea:focus {
     line-height: 5rem;
     font-size: 2rem;
     border: none;
-    padding: 1rem;    
+    padding: 1rem;
   }
 
-  .text-modal-bottons{
+  .text-modal-bottons {
     align-self: center;
   }
 
