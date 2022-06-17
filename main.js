@@ -341,12 +341,11 @@ projectDetailsModal.addEventListener('click', (e) => {
   }
 });
 
-//-----------------Form validation------------------//
+// -----------------Form validation------------------//
 const contactFrm = document.getElementById('contactFrm');
 const nameFrm = document.querySelector('#name');
 const emailFrm = document.querySelector('#email');
 const messageFrm = document.querySelector('#message');
-
 
 function validationFrm(event) {
   const email = document.getElementById('email');
@@ -362,43 +361,51 @@ function validationFrm(event) {
 
 contactFrm.addEventListener('submit', validationFrm);
 
-//-----------------Local storage------------------//
+// -----------------Local storage------------------//
 const contactFrmData = {
   name: '',
   email: '',
   message: '',
 };
 
-//Function to validate if local storage is available
+// Function to validate if local storage is available
 function storageAvailable(type) {
   try {
-    let storage = window[type],
-      x = '__storage_test__';
+    const storage = window[type];
+    const x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
-  }
-  catch (e) {
+  } catch (e) {
     return e instanceof DOMException && (
       // everything except Firefox
-      e.code === 22 ||
+      e.code === 22
       // Firefox
-      e.code === 1014 ||
+      || e.code === 1014
       // test name field too, because code might not be present
       // everything except Firefox
-      e.name === 'QuotaExceededError' ||
+      || e.name === 'QuotaExceededError'
       // Firefox
-      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
       // acknowledge QuotaExceededError only if there's something already stored
-      storage.length !== 0;
+      && localStorage.length !== 0;
   }
 }
 
-//Function to save data from contact form in local storage
+// Function to save data from local storage in contact frm
+function setFrmData() {
+  const newDataFrm = JSON.parse(localStorage.getItem('contactFrmData'));
+
+  nameFrm.value = newDataFrm.name;
+  emailFrm.value = newDataFrm.email;
+  messageFrm.value = newDataFrm.message;
+}
+
+// Function to save data from contact form in local storage
 function saveFrmData() {
-  contactFrm.name=nameFrm.value
-  contactFrm.email=emailFrm.value;
-  contactFrm.message=messageFrm.value;
+  contactFrmData.name = nameFrm.value;
+  contactFrmData.email = emailFrm.value;
+  contactFrmData.message = messageFrm.value;
 
   const dataStr = JSON.stringify(contactFrmData);
   localStorage.setItem('contactFrmData', dataStr);
@@ -406,27 +413,16 @@ function saveFrmData() {
   setFrmData();
 }
 
-//Function to save data from local storage in contact frm
-function setFrmData() {
-  const newDataFrm = JSON.parse(localStorage.getItem('contactFrmData'));
-
-  nameFrm.value = newDataFrm.name;
-  emailFrm.value = newDataFrm.email;
-  messageFrm.value = newDataFrm.msg;
-}
-
 if (storageAvailable('localStorage')) {
   if (!localStorage.getItem('contactFrmData')) {
     saveFrmData();
-  }else{
+  } else {
     setFrmData();
   }
-}
-else {
+} else {
   // Too bad, no localStorage for us
 }
 
 nameFrm.onchange = saveFrmData;
 emailFrm.onchange = saveFrmData;
 messageFrm.onchange = saveFrmData;
-
