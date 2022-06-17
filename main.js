@@ -343,18 +343,86 @@ projectDetailsModal.addEventListener('click', (e) => {
 
 // -----------------Form validation------------------//
 const contactFrm = document.getElementById('contactFrm');
+const nameFrm = document.querySelector('#name');
+const emailFrm = document.querySelector('#email');
+const messageFrm = document.querySelector('#message');
 
 function validationFrm(event) {
   const email = document.getElementById('email');
-  const emailValue = email.value.trim();
-  const error = document.getElementById('error');
+  const error = document.getElementById('error-email');
 
-  if (emailValue !== emailValue.toLowerCase()) {
-    error.innerHTML = 'Please enter your email in lower case.';
+  if (email !== email.toLowerCase()) {
+    error.textContent = 'Please enter your email in lower case.';
     event.preventDefault();
   } else {
-    error.innerHTML = '';
+    error.textContent = '';
   }
 }
 
 contactFrm.addEventListener('submit', validationFrm);
+
+// -----------------Local storage------------------//
+const contactFrmData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+// Function to validate if local storage is available
+function storageAvailable(type) {
+  try {
+    const storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22
+      // Firefox
+      || e.code === 1014
+      // test name field too, because code might not be present
+      // everything except Firefox
+      || e.name === 'QuotaExceededError'
+      // Firefox
+      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      // acknowledge QuotaExceededError only if there's something already stored
+      && localStorage.length !== 0;
+  }
+}
+
+// Function to save data from local storage in contact frm
+function setFrmData() {
+  const newDataFrm = JSON.parse(localStorage.getItem('contactFrmData'));
+
+  nameFrm.value = newDataFrm.name;
+  emailFrm.value = newDataFrm.email;
+  messageFrm.value = newDataFrm.message;
+}
+
+// Function to save data from contact form in local storage
+function saveFrmData() {
+  contactFrmData.name = nameFrm.value;
+  contactFrmData.email = emailFrm.value;
+  contactFrmData.message = messageFrm.value;
+
+  const dataStr = JSON.stringify(contactFrmData);
+  localStorage.setItem('contactFrmData', dataStr);
+
+  setFrmData();
+}
+
+if (storageAvailable('localStorage')) {
+  if (!localStorage.getItem('contactFrmData')) {
+    saveFrmData();
+  } else {
+    setFrmData();
+  }
+} else {
+  // Too bad, no localStorage for us
+}
+
+nameFrm.onchange = saveFrmData;
+emailFrm.onchange = saveFrmData;
+messageFrm.onchange = saveFrmData;
