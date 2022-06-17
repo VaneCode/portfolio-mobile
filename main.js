@@ -16,7 +16,7 @@ menuIcon.onclick = function () { openMenu(); };
 menuOption.onclick = function () { closeMenu(); };
 
 // Projects array objects
-const projects = [
+const projectos = [
   {
     projectID: 1,
     name: 'Project 1',
@@ -410,7 +410,7 @@ function saveFrmData() {
   const dataStr = JSON.stringify(contactFrmData);
   localStorage.setItem('contactFrmData', dataStr);
 
-  setFrmData();
+  //setFrmData();
 }
 
 if (storageAvailable('localStorage')) {
