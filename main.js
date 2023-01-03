@@ -57,12 +57,12 @@ const projects = [
     projectID: 4,
     name: 'To do list',
     featuredImage: 'images/project_4.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
+    technologies: ['HTML5/SASS', 'JavaScript', 'Luxon'],
+    descriptionP1: 'This is a web tool that allows the user to organize the task for the day.'
+      + 'Users can add a new task, check a task as completed.',
+    descriptionP2: 'Also, delete all completed tasks and clear the list.'
+      + 'his project was created usign JavaScript, HTML5 and SASS.',
+    linkLiveVersion: 'https://github.com/VaneCode/to-do-list',
     linkSource: 'https://vanecode.github.io/to-do-list/dist/',
   },
   {
