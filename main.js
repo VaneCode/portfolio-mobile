@@ -25,27 +25,27 @@ const projects = [
     descriptionP1: 'This is a mobile web application, which allows users to control their budgets.'
       + 'The user can divide the budget into different categories. ',
     descriptionP2: 'And insert the expenses that have been made in the categories.'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+      + ' This project was built with Ruby on Rails, Postgresql, and Tailwind.',
+    linkLiveVersion: 'https://money-moves.onrender.com/',
+    linkSource: 'https://github.com/VaneCode/money_moves',
   },
   {
     projectID: 2,
     name: 'Space travelers',
     featuredImage: 'images/project_2.jpg',
-    technologies: ['', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    technologies: ['React-Bootstrap', 'React', 'Axios'],
+    descriptionP1: 'Space travelers is an exciting project for space adventurers.'
+      + 'This application allows them to reserve rockets, and also join space missions.',
+    descriptionP2: 'Users can go to their profiles to see their reserved rockets and missions.'
+      + 'As well as cancel them.',
+    linkLiveVersion: 'https://poetic-truffle-186148.netlify.app/',
+    linkSource: 'https://github.com/VaneCode/SpaceTravelers',
   },
   {
     projectID: 3,
     name: 'Bookstore',
     featuredImage: 'images/project_3.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
+    technologies: ['HTML5/CSS3', 'React', 'MUI'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
     descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
