@@ -64,6 +64,9 @@ body {
 .header-container {
   display: flex;
   flex: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .nav-flex {
