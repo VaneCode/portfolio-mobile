@@ -69,13 +69,13 @@ const projects = [
     projectID: 5,
     name: 'Leaderboard',
     featuredImage: 'images/project_5.png',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    technologies: ['HTML5', 'SASS', 'JavaScript'],
+    descriptionP1: 'This is a project that shows the highest scores in the dashboard.'
+      + 'and allows the user to enter their own scores.',
+    descriptionP2: 'So with this project, you can keep track of any game that you want.'
+      + 'This project was building using Webpack, Saas, JavaScript and HTML5.',
+    linkLiveVersion: 'https://tubular-vacherin-65e4cd.netlify.app/',
+    linkSource: 'https://github.com/VaneCode/leaderboard',
   },
   {
     projectID: 6,
