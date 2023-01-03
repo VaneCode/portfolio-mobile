@@ -19,7 +19,7 @@ menuOption.onclick = function () { closeMenu(); };
 const projects = [
   {
     projectID: 1,
-    name: 'Project 1',
+    name: 'Money moves',
     featuredImage: './images/project_1.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     projectID: 2,
-    name: 'Project 2',
+    name: 'Space travelers',
     featuredImage: 'images/project_2.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     projectID: 3,
-    name: 'Project 3',
+    name: 'Bookstore',
     featuredImage: 'images/project_3.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     projectID: 4,
-    name: 'Project 4',
+    name: 'To do list',
     featuredImage: 'images/project_4.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -67,7 +67,7 @@ const projects = [
   },
   {
     projectID: 5,
-    name: 'Project 5',
+    name: 'Leaderboard',
     featuredImage: 'images/project_5.png',
     technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -79,7 +79,7 @@ const projects = [
   },
   {
     projectID: 6,
-    name: 'Project 6',
+    name: 'Art gallery',
     featuredImage: 'images/project_6.jpg',
     technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
