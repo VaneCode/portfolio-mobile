@@ -68,7 +68,7 @@ const projects = [
   {
     projectID: 5,
     name: 'Leaderboard',
-    featuredImage: 'images/project_5.png',
+    featuredImage: 'images/project_5.jpg',
     technologies: ['HTML5', 'Sass', 'JavaScript'],
     descriptionP1: 'This is a project that shows the highest scores in the dashboard.'
       + 'and allows the user to enter their own scores.',
