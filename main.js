@@ -46,12 +46,12 @@ const projects = [
     name: 'Bookstore',
     featuredImage: 'images/project_3.jpg',
     technologies: ['HTML5/CSS3', 'React', 'MUI'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    descriptionP1: 'The perfect website for reading lovers, it shows information about a list of books fetched from an API.'
+      + 'With this application, the user can add a book, and delete a select book.',
+    descriptionP2: 'The app also shows the reading progress by book.'
+      + 'This project was created with React, HTML5, and CSS3.',
+    linkLiveVersion: 'www.google.chttps://idyllic-starship-595a45.netlify.app/om',
+    linkSource: 'https://github.com/VaneCode/Bookstore',
   },
   {
     projectID: 4,
@@ -63,7 +63,7 @@ const projects = [
     descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
       + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    linkSource: 'https://vanecode.github.io/to-do-list/dist/',
   },
   {
     projectID: 5,
