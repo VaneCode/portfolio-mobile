@@ -127,7 +127,7 @@ body {
 }
 
 .active #menu-icon img {
-  content: url("images/ic_cross.svg");
+  content: url("images/ic_cross.png");
 }
 
 /* Headline section */
