@@ -21,10 +21,10 @@ const projects = [
     projectID: 1,
     name: 'Money moves',
     featuredImage: './images/project_1.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    technologies: ['Tailwind', 'Ruby on Rails', 'PostgreSQL'],
+    descriptionP1: 'This is a mobile web application, which allows users to control their budgets.'
+      + 'The user can divide the budget into different categories. ',
+    descriptionP2: 'And insert the expenses that have been made in the categories.'
       + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     linkLiveVersion: 'www.google.com',
     linkSource: 'www.github.com',
@@ -33,7 +33,7 @@ const projects = [
     projectID: 2,
     name: 'Space travelers',
     featuredImage: 'images/project_2.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
+    technologies: ['', 'Ruby on rails', 'JavaScript'],
     descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
     descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
