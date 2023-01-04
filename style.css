@@ -596,6 +596,7 @@ textarea:focus {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  padding: 4rem;
 }
 
 .social-icons-list li {
@@ -1038,10 +1039,9 @@ textarea:focus {
   }
 
   .social-icons {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    padding-right: 5%;
+    justify-items: center;
   }
 
   .button-footer {
@@ -1058,8 +1058,10 @@ textarea:focus {
   }
 
   .social-icons-list {
-    flex: 2;
-    justify-self: flex-end;
+    display: flex;
+    justify-items: space-between;
+    width: 80%;
+    padding-top: 4rem;
   }
 
   /* Modals */

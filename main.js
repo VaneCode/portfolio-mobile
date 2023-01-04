@@ -233,7 +233,7 @@ function createModalProjectContent(id) {
   const seeLiveAnchor = document.createElement('a');
   seeLiveAnchor.setAttribute('href', project.linkLiveVersion);
   seeLiveAnchor.setAttribute('target', '_blank');
-  seeLiveAnchor.setAttribute('rel','noopener');
+  seeLiveAnchor.setAttribute('rel', 'noopener');
   const seeLiveBtn = document.createElement('button');
   seeLiveBtn.setAttribute('class', 'modal-buttons');
   const textSeeLiveBtn = document.createTextNode('See live');
@@ -252,7 +252,7 @@ function createModalProjectContent(id) {
   const seeSourceAnchor = document.createElement('a');
   seeSourceAnchor.setAttribute('href', project.linkSource);
   seeSourceAnchor.setAttribute('target', '_blank');
-  seeSourceAnchor.setAttribute('rel','noopener');
+  seeSourceAnchor.setAttribute('rel', 'noopener');
   const seeSourceBtn = document.createElement('button');
   seeSourceBtn.setAttribute('class', 'modal-buttons');
   const textSeeSourceBtn = document.createTextNode('See source');
