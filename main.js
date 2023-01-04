@@ -33,7 +33,7 @@ const projects = [
     projectID: 2,
     name: 'Space travelers',
     featuredImage: 'images/project_2.jpg',
-    technologies: ['React-Bootstrap', 'React', 'Axios'],
+    technologies: ['Bootstrap', 'React', 'Axios'],
     descriptionP1: 'Space travelers is an exciting project for space adventurers.'
       + 'This application allows them to reserve rockets, and also join space missions.',
     descriptionP2: 'Users can go to their profiles to see their reserved rockets and missions.'
