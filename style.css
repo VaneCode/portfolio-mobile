@@ -64,6 +64,9 @@ body {
 .header-container {
   display: flex;
   flex: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .nav-flex {
@@ -124,7 +127,7 @@ body {
 }
 
 .active #menu-icon img {
-  content: url("images/ic_cross.svg");
+  content: url("images/ic_cross.png");
 }
 
 /* Headline section */
@@ -296,7 +299,7 @@ body {
 }
 
 .img-work-source5 {
-  background-image: url("./images/project_5.png");
+  background-image: url("./images/project_5.jpg");
 }
 
 .img-work-source6 {
@@ -593,6 +596,7 @@ textarea:focus {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  padding: 4rem;
 }
 
 .social-icons-list li {
@@ -1035,10 +1039,9 @@ textarea:focus {
   }
 
   .social-icons {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    padding-right: 5%;
+    justify-items: center;
   }
 
   .button-footer {
@@ -1055,8 +1058,10 @@ textarea:focus {
   }
 
   .social-icons-list {
-    flex: 2;
-    justify-self: flex-end;
+    display: flex;
+    justify-items: space-between;
+    width: 80%;
+    padding-top: 4rem;
   }
 
   /* Modals */

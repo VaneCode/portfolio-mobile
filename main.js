@@ -19,75 +19,75 @@ menuOption.onclick = function () { closeMenu(); };
 const projects = [
   {
     projectID: 1,
-    name: 'Project 1',
+    name: 'Money moves',
     featuredImage: './images/project_1.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    technologies: ['Tailwind', 'Ruby on Rails', 'PostgreSQL'],
+    descriptionP1: 'This is a mobile web application, which allows users to control their budgets.'
+      + 'The user can divide the budget into different categories. ',
+    descriptionP2: 'And insert the expenses that have been made in the categories.'
+      + ' This project was built with Ruby on Rails, Postgresql, and Tailwind.',
+    linkLiveVersion: 'https://money-moves.onrender.com/',
+    linkSource: 'https://github.com/VaneCode/money_moves',
   },
   {
     projectID: 2,
-    name: 'Project 2',
+    name: 'Space travelers',
     featuredImage: 'images/project_2.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    technologies: ['Bootstrap', 'React', 'Axios'],
+    descriptionP1: 'Space travelers is an exciting project for space adventurers.'
+      + 'This application allows them to reserve rockets, and also join space missions.',
+    descriptionP2: 'Users can go to their profiles to see their reserved rockets and missions.'
+      + 'As well as cancel them.',
+    linkLiveVersion: 'https://poetic-truffle-186148.netlify.app/',
+    linkSource: 'https://github.com/VaneCode/SpaceTravelers',
   },
   {
     projectID: 3,
-    name: 'Project 3',
+    name: 'Bookstore',
     featuredImage: 'images/project_3.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    technologies: ['HTML5/CSS3', 'React', 'MUI'],
+    descriptionP1: 'The perfect website for reading lovers, it shows information about a list of books fetched from an API.'
+      + 'With this application, the user can add a book, and delete a select book.',
+    descriptionP2: 'The app also shows the reading progress by book.'
+      + 'This project was created with React, HTML5, and CSS3.',
+    linkLiveVersion: 'www.google.chttps://idyllic-starship-595a45.netlify.app/om',
+    linkSource: 'https://github.com/VaneCode/Bookstore',
   },
   {
     projectID: 4,
-    name: 'Project 4',
+    name: 'To do list',
     featuredImage: 'images/project_4.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    technologies: ['HTML5/SASS', 'JavaScript', 'Luxon'],
+    descriptionP1: 'This is a web tool that allows the user to organize the task for the day.'
+      + 'Users can add a new task, check a task as completed.',
+    descriptionP2: 'Also, delete all completed tasks and clear the list.'
+      + 'his project was created usign JavaScript, HTML5 and SASS.',
+    linkLiveVersion: 'https://github.com/VaneCode/to-do-list',
+    linkSource: 'https://vanecode.github.io/to-do-list/dist/',
   },
   {
     projectID: 5,
-    name: 'Project 5',
-    featuredImage: 'images/project_5.png',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    name: 'Leaderboard',
+    featuredImage: 'images/project_5.jpg',
+    technologies: ['HTML5', 'Sass', 'JavaScript'],
+    descriptionP1: 'This is a project that shows the highest scores in the dashboard.'
+      + 'and allows the user to enter their own scores.',
+    descriptionP2: 'So with this project, you can keep track of any game that you want.'
+      + 'This project was building using Webpack, Sass, JavaScript and HTML5.',
+    linkLiveVersion: 'https://tubular-vacherin-65e4cd.netlify.app/',
+    linkSource: 'https://github.com/VaneCode/leaderboard',
   },
   {
     projectID: 6,
-    name: 'Project 6',
+    name: 'Art gallery',
     featuredImage: 'images/project_6.jpg',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'JavaScript'],
-    descriptionP1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      + 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ',
-    descriptionP2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-      + 'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    linkLiveVersion: 'www.google.com',
-    linkSource: 'www.github.com',
+    technologies: ['HTML5', 'Sass', 'JavaScript'],
+    descriptionP1: 'This is a project that contains a web page of the gallery Evocative Artworks.'
+      + 'Its information and, featured exhibitions.',
+    descriptionP2: 'This application was creating using the approach mobile first.'
+      + 'This project was built using JavaScript, HTML5 and Sass.',
+    linkLiveVersion: 'https://github.com/VaneCode/art-gallery',
+    linkSource: 'https://vanecode.github.io/art-gallery/',
   },
 ];
 
@@ -230,6 +230,10 @@ function createModalProjectContent(id) {
   projectBtnCointaner1.setAttribute('id', 'btn-container-2');
   projectDespcriptionDiv.appendChild(projectBtnCointaner1);
   // Project see live button
+  const seeLiveAnchor = document.createElement('a');
+  seeLiveAnchor.setAttribute('href', project.linkLiveVersion);
+  seeLiveAnchor.setAttribute('target', '_blank');
+  seeLiveAnchor.setAttribute('rel', 'noopener');
   const seeLiveBtn = document.createElement('button');
   seeLiveBtn.setAttribute('class', 'modal-buttons');
   const textSeeLiveBtn = document.createTextNode('See live');
@@ -242,8 +246,13 @@ function createModalProjectContent(id) {
   iconSeeLiveBtn.setAttribute('class', 'icon-see-live icon-btn-modal');
   iconSeeLiveBtn.setAttribute('id', 'icon-see-live-div');
   seeLiveBtn.appendChild(iconSeeLiveBtn);
-  projectBtnCointaner1.appendChild(seeLiveBtn);
+  seeLiveAnchor.appendChild(seeLiveBtn);
+  projectBtnCointaner1.appendChild(seeLiveAnchor);
   // Project see source button
+  const seeSourceAnchor = document.createElement('a');
+  seeSourceAnchor.setAttribute('href', project.linkSource);
+  seeSourceAnchor.setAttribute('target', '_blank');
+  seeSourceAnchor.setAttribute('rel', 'noopener');
   const seeSourceBtn = document.createElement('button');
   seeSourceBtn.setAttribute('class', 'modal-buttons');
   const textSeeSourceBtn = document.createTextNode('See source');
@@ -255,7 +264,8 @@ function createModalProjectContent(id) {
   iconSeeSourceBtn.setAttribute('class', 'icon-see-source icon-btn-modal');
   iconSeeSourceBtn.setAttribute('id', 'icon-see-source-div');
   seeSourceBtn.appendChild(iconSeeSourceBtn);
-  projectBtnCointaner1.appendChild(seeSourceBtn);
+  seeSourceAnchor.appendChild(seeSourceBtn);
+  projectBtnCointaner1.appendChild(seeSourceAnchor);
   projectDetailsModal.appendChild(projectBtnCointaner1);
   // Project div previous button and next button
   const projectBtnCointaner2 = document.createElement('div');
