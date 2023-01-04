@@ -230,6 +230,10 @@ function createModalProjectContent(id) {
   projectBtnCointaner1.setAttribute('id', 'btn-container-2');
   projectDespcriptionDiv.appendChild(projectBtnCointaner1);
   // Project see live button
+  const seeLiveAnchor = document.createElement('a');
+  seeLiveAnchor.setAttribute('href', project.linkLiveVersion);
+  seeLiveAnchor.setAttribute('target', '_blank');
+  seeLiveAnchor.setAttribute('rel','noopener');
   const seeLiveBtn = document.createElement('button');
   seeLiveBtn.setAttribute('class', 'modal-buttons');
   const textSeeLiveBtn = document.createTextNode('See live');
@@ -242,8 +246,13 @@ function createModalProjectContent(id) {
   iconSeeLiveBtn.setAttribute('class', 'icon-see-live icon-btn-modal');
   iconSeeLiveBtn.setAttribute('id', 'icon-see-live-div');
   seeLiveBtn.appendChild(iconSeeLiveBtn);
-  projectBtnCointaner1.appendChild(seeLiveBtn);
+  seeLiveAnchor.appendChild(seeLiveBtn);
+  projectBtnCointaner1.appendChild(seeLiveAnchor);
   // Project see source button
+  const seeSourceAnchor = document.createElement('a');
+  seeSourceAnchor.setAttribute('href', project.linkSource);
+  seeSourceAnchor.setAttribute('target', '_blank');
+  seeSourceAnchor.setAttribute('rel','noopener');
   const seeSourceBtn = document.createElement('button');
   seeSourceBtn.setAttribute('class', 'modal-buttons');
   const textSeeSourceBtn = document.createTextNode('See source');
@@ -255,7 +264,8 @@ function createModalProjectContent(id) {
   iconSeeSourceBtn.setAttribute('class', 'icon-see-source icon-btn-modal');
   iconSeeSourceBtn.setAttribute('id', 'icon-see-source-div');
   seeSourceBtn.appendChild(iconSeeSourceBtn);
-  projectBtnCointaner1.appendChild(seeSourceBtn);
+  seeSourceAnchor.appendChild(seeSourceBtn);
+  projectBtnCointaner1.appendChild(seeSourceAnchor);
   projectDetailsModal.appendChild(projectBtnCointaner1);
   // Project div previous button and next button
   const projectBtnCointaner2 = document.createElement('div');
