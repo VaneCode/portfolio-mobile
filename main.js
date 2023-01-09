@@ -50,7 +50,7 @@ const projects = [
       + 'With this application, the user can add a book, and delete a select book.',
     descriptionP2: 'The app also shows the reading progress by book.'
       + 'This project was created with React, HTML5, and CSS3.',
-    linkLiveVersion: 'www.google.chttps://idyllic-starship-595a45.netlify.app/om',
+    linkLiveVersion: 'https://idyllic-starship-595a45.netlify.app/',
     linkSource: 'https://github.com/VaneCode/Bookstore',
   },
   {
@@ -86,8 +86,8 @@ const projects = [
       + 'Its information and, featured exhibitions.',
     descriptionP2: 'This application was creating using the approach mobile first.'
       + 'This project was built using JavaScript, HTML5 and Sass.',
-    linkLiveVersion: 'https://github.com/VaneCode/art-gallery',
-    linkSource: 'https://vanecode.github.io/art-gallery/',
+    linkLiveVersion: 'https://vanecode.github.io/art-gallery/',
+    linkSource: 'https://github.com/VaneCode/art-gallery',
   },
 ];
 
@@ -196,7 +196,6 @@ function createModalProjectContent(id) {
   // Technologies li
   techs.forEach((tech) => {
     const liTech = document.createElement('li');
-    // liTech.setAttribute('class', "li-style")
     const liText = document.createTextNode(tech);
     liTech.appendChild(liText);
     techUl.appendChild(liTech);
@@ -234,6 +233,7 @@ function createModalProjectContent(id) {
   seeLiveAnchor.setAttribute('href', project.linkLiveVersion);
   seeLiveAnchor.setAttribute('target', '_blank');
   seeLiveAnchor.setAttribute('rel', 'noopener');
+  seeLiveAnchor.setAttribute('style', 'text-decoration:none');
   const seeLiveBtn = document.createElement('button');
   seeLiveBtn.setAttribute('class', 'modal-buttons');
   const textSeeLiveBtn = document.createTextNode('See live');
@@ -253,6 +253,7 @@ function createModalProjectContent(id) {
   seeSourceAnchor.setAttribute('href', project.linkSource);
   seeSourceAnchor.setAttribute('target', '_blank');
   seeSourceAnchor.setAttribute('rel', 'noopener');
+  seeSourceAnchor.setAttribute('style', 'text-decoration:none');
   const seeSourceBtn = document.createElement('button');
   seeSourceBtn.setAttribute('class', 'modal-buttons');
   const textSeeSourceBtn = document.createTextNode('See source');
