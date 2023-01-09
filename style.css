@@ -9,6 +9,10 @@ body {
   background: #fff;
 }
 
+* {
+  border: solid red 1px;
+}
+
 /* Text style */
 
 .text-title {
@@ -896,7 +900,7 @@ textarea:focus {
     grid-template-areas:
       'title project1 project1'
       'project2 deco-1 project5'
-      'project3 project3 project5'
+      'project3 project3 project6'
       'deco-2 project4 project4';
   }
 
@@ -938,8 +942,8 @@ textarea:focus {
   }
 
   #project6 {
-    grid-area: project5;
-    margin-top: 3%;
+    grid-area: project6;
+    width: 100%;
   }
 
   #project6 .img-work {
@@ -960,15 +964,14 @@ textarea:focus {
 
   #project4 {
     grid-area: project4;
-    margin-left: 20%;
-    width: 60%;
+    width: 100%;
   }
 
   #project4 .img-work {
     background-size: contain;
   }
 
-  .title-p2 {
+ /* .title-p2 {
     display: none;
   }
 
@@ -978,7 +981,7 @@ textarea:focus {
 
   .button-p2 {
     display: none;
-  }
+  } */
 
   /* About section */
 
