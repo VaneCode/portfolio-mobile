@@ -969,7 +969,7 @@ textarea:focus {
   }
 
   #project4 .img-work {
-    background-size: contain;
+    background-size: cover;
   }
 
   /* About section */
