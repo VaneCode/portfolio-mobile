@@ -9,7 +9,7 @@ body {
   background: #fff;
 }
 
-* {
+/** {
   border: solid red 1px;
 }
 
@@ -970,18 +970,6 @@ textarea:focus {
   #project4 .img-work {
     background-size: contain;
   }
-
- /* .title-p2 {
-    display: none;
-  }
-
-  .tech-p2 {
-    display: none;
-  }
-
-  .button-p2 {
-    display: none;
-  } */
 
   /* About section */
 
