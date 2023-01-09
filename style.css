@@ -888,7 +888,7 @@ textarea:focus {
     background-size: center;
     background-position: relative;
     width: 50%;
-    padding-bottom: 80%;
+    padding-bottom: 70%;
   }
 
   .item-3 {
@@ -897,6 +897,7 @@ textarea:focus {
 
   /* Works section */
   .grid-works {
+    grid-gap: 2rem 5rem;
     grid-template-areas:
       'title project1 project1'
       'project2 deco-1 project5'
