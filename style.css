@@ -9,7 +9,7 @@ body {
   background: #fff;
 }
 
-* {
+/* {
   border: solid red 1px;
 }
 
@@ -374,7 +374,7 @@ body {
   vertical-align: center;
 }
 
-/*.button-work {
+/* .button-work {
   background: #1a2236;
   color: #fff;
   display: inline-block;
@@ -393,14 +393,52 @@ body {
 
 .button-work:hover {
   font-size: 2rem;
-}*/
+} */
 
-.div-btn-work{
+.div-btn-work {
   display: flex;
   height: 4rem;
+  justify-content: flex-start;
+  margin: 2rem 0 2rem 0;
+  padding-left: 2rem;
+  gap: 3.5rem;
+}
+
+.work-btn {
+  display: flex;
   justify-content: center;
-  margin: 1rem 0 1rem 0;
-  gap: 3rem;
+  align-items: center;
+  width: 13rem;
+  height: 4rem;
+  gap: 0.5rem;
+  border: white solid 0.5rem;
+  cursor: pointer;
+  border-radius: 1.6rem;
+  color: #1a2236;
+}
+
+.icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-live {
+  background-image: url('images/seeLiveIcon.png');
+}
+
+.icon-source {
+  background-image: url("images/seeSourceIcon.png");
+}
+
+/* .modal-buttons:hover #icon-see-source-div {
+  background-image: url("./images/github.png");
+}
+
+.modal-buttons:hover #icon-see-live-div {
+  background-image: url("./images/ic_download.png");
 }
 
 /* About section */
