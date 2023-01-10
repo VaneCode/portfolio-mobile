@@ -374,7 +374,7 @@ body {
   vertical-align: center;
 }
 
-.button-work {
+/*.button-work {
   background: #1a2236;
   color: #fff;
   display: inline-block;
@@ -393,6 +393,14 @@ body {
 
 .button-work:hover {
   font-size: 2rem;
+}*/
+
+.div-btn-work{
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+  gap: 3rem;
 }
 
 /* About section */
