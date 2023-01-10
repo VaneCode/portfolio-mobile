@@ -12,8 +12,12 @@ function closeMenu() {
   menuNav.classList.remove('active');
 }
 
-menuIcon.onclick = function () { openMenu(); };
-menuOption.onclick = function () { closeMenu(); };
+menuIcon.onclick = function () {
+  openMenu();
+};
+menuOption.onclick = function () {
+  closeMenu();
+};
 
 // Projects array objects
 const projects = [
@@ -22,9 +26,11 @@ const projects = [
     name: 'Money moves',
     featuredImage: './images/project_1.jpg',
     technologies: ['Tailwind', 'Ruby on Rails', 'PostgreSQL'],
-    descriptionP1: 'This is a mobile web application, which allows users to control their budgets.'
-      + 'The user can divide the budget into different categories. ',
-    descriptionP2: 'And insert the expenses that have been made in the categories.'
+    descriptionP1:
+      'This is a mobile web application, which allows users to control their budgets.'
+      + ' The user can divide the budget into different categories. ',
+    descriptionP2:
+      'And insert the expenses that have been made in the categories.'
       + ' This project was built with Ruby on Rails, Postgresql, and Tailwind.',
     linkLiveVersion: 'https://money-moves.onrender.com/',
     linkSource: 'https://github.com/VaneCode/money_moves',
@@ -34,10 +40,12 @@ const projects = [
     name: 'Space travelers',
     featuredImage: 'images/project_2.jpg',
     technologies: ['Bootstrap', 'React', 'Axios'],
-    descriptionP1: 'Space travelers is an exciting project for space adventurers.'
-      + 'This application allows them to reserve rockets, and also join space missions.',
-    descriptionP2: 'Users can go to their profiles to see their reserved rockets and missions.'
-      + 'As well as cancel them.',
+    descriptionP1:
+      'Space travelers is an exciting project for space adventurers.'
+      + ' This application allows them to reserve rockets, and also join space missions.',
+    descriptionP2:
+      ' Users can go to their profiles to see their reserved rockets and missions.'
+      + ' As well as cancel them.',
     linkLiveVersion: 'https://poetic-truffle-186148.netlify.app/',
     linkSource: 'https://github.com/VaneCode/SpaceTravelers',
   },
@@ -46,11 +54,13 @@ const projects = [
     name: 'Bookstore',
     featuredImage: 'images/project_3.jpg',
     technologies: ['HTML5/CSS3', 'React', 'MUI'],
-    descriptionP1: 'The perfect website for reading lovers, it shows information about a list of books fetched from an API.'
-      + 'With this application, the user can add a book, and delete a select book.',
-    descriptionP2: 'The app also shows the reading progress by book.'
-      + 'This project was created with React, HTML5, and CSS3.',
-    linkLiveVersion: 'www.google.chttps://idyllic-starship-595a45.netlify.app/om',
+    descriptionP1:
+      'The perfect website for reading lovers, it shows information about a list of books fetched from an API.'
+      + ' With this application, the user can add a book, and delete a select book.',
+    descriptionP2:
+      ' The app also shows the reading progress by book.'
+      + ' This project was created with React, HTML5, and CSS3.',
+    linkLiveVersion: 'https://idyllic-starship-595a45.netlify.app/',
     linkSource: 'https://github.com/VaneCode/Bookstore',
   },
   {
@@ -58,10 +68,12 @@ const projects = [
     name: 'To do list',
     featuredImage: 'images/project_4.jpg',
     technologies: ['HTML5/SASS', 'JavaScript', 'Luxon'],
-    descriptionP1: 'This is a web tool that allows the user to organize the task for the day.'
-      + 'Users can add a new task, check a task as completed.',
-    descriptionP2: 'Also, delete all completed tasks and clear the list.'
-      + 'his project was created usign JavaScript, HTML5 and SASS.',
+    descriptionP1:
+      'This is a web tool that allows the user to organize the task for the day.'
+      + ' Users can add a new task, check a task as completed.',
+    descriptionP2:
+      ' Also, delete all completed tasks and clear the list.'
+      + ' This project was created usign JavaScript, HTML5 and SASS.',
     linkLiveVersion: 'https://github.com/VaneCode/to-do-list',
     linkSource: 'https://vanecode.github.io/to-do-list/dist/',
   },
@@ -70,10 +82,12 @@ const projects = [
     name: 'Leaderboard',
     featuredImage: 'images/project_5.jpg',
     technologies: ['HTML5', 'Sass', 'JavaScript'],
-    descriptionP1: 'This is a project that shows the highest scores in the dashboard.'
-      + 'and allows the user to enter their own scores.',
-    descriptionP2: 'So with this project, you can keep track of any game that you want.'
-      + 'This project was building using Webpack, Sass, JavaScript and HTML5.',
+    descriptionP1:
+      'This is a project that shows the highest scores in the dashboard '
+      + 'and allows the user to enter their scores.',
+    descriptionP2:
+      ' So with this project, you can keep track of any game that you want.'
+      + ' This project was built using Webpack, Sass, JavaScript, and HTML5.',
     linkLiveVersion: 'https://tubular-vacherin-65e4cd.netlify.app/',
     linkSource: 'https://github.com/VaneCode/leaderboard',
   },
@@ -82,12 +96,14 @@ const projects = [
     name: 'Art gallery',
     featuredImage: 'images/project_6.jpg',
     technologies: ['HTML5', 'Sass', 'JavaScript'],
-    descriptionP1: 'This is a project that contains a web page of the gallery Evocative Artworks.'
-      + 'Its information and, featured exhibitions.',
-    descriptionP2: 'This application was creating using the approach mobile first.'
-      + 'This project was built using JavaScript, HTML5 and Sass.',
-    linkLiveVersion: 'https://github.com/VaneCode/art-gallery',
-    linkSource: 'https://vanecode.github.io/art-gallery/',
+    descriptionP1:
+      'This is a project that contains a web page of the gallery Evocative Artworks.'
+      + ' Its information and, featured exhibitions.',
+    descriptionP2:
+      ' This application was created using the approach of mobile first.'
+      + ' This project was built using JavaScript, HTML5, and Sass.',
+    linkLiveVersion: 'https://vanecode.github.io/art-gallery/',
+    linkSource: 'https://github.com/VaneCode/art-gallery',
   },
 ];
 
@@ -104,6 +120,7 @@ projects.forEach((project) => {
   const imgNumber = project.projectID;
   classImg = classImg.concat(imgNumber);
   divProjectImage.setAttribute('class', classImg);
+  divProjectImage.setAttribute('id', project.projectID);
   divProject.appendChild(divProjectImage);
   // Div project name
   const divProjectName = document.createElement('div');
@@ -118,6 +135,17 @@ projects.forEach((project) => {
   projectName.appendChild(projectNameText);
   divProjectName.appendChild(projectName);
   divProject.appendChild(divProjectName);
+  // Div for description
+  const divProjectDescription = document.createElement('div');
+  divProjectDescription.setAttribute('class', 'flex-work-description');
+  const projectDescription = document.createElement('p');
+  const desciption = project.descriptionP1
+    .concat()
+    .concat(project.descriptionP2);
+  const projectDescriptionText = document.createTextNode(desciption);
+  projectDescription.appendChild(projectDescriptionText);
+  divProjectDescription.appendChild(projectDescription);
+  divProject.appendChild(divProjectDescription);
   // Div for flex technologies
   const divFlexTech = document.createElement('div');
   if (project.projectID === 1 || project.projectID === 6) {
@@ -143,34 +171,58 @@ projects.forEach((project) => {
     divProject.appendChild(divFlexTech);
   });
   // Div for buttoms (project)
-  const divBtnProject = document.createElement('div');
-  if (project.projectID !== 1 && project.projectID !== 6) {
-    divBtnProject.setAttribute('class', 'button-p2');
-  }
-  const btnProject = document.createElement('button');
-  btnProject.setAttribute('type', 'button');
-  btnProject.setAttribute('class', 'button-work');
-  btnProject.setAttribute('id', project.projectID);
-  const textbtnProject = document.createTextNode(' See this project ');
-  const svgIcon = document.createElement('svg');
-  svgIcon.setAttribute('class', 'arrow_icon flex-button-icon');
-  btnProject.appendChild(textbtnProject);
-  btnProject.appendChild(svgIcon);
-  divBtnProject.appendChild(btnProject);
-  divProject.appendChild(divBtnProject);
+  // Project div see live button and see source button
+  const projectBtnCointaner = document.createElement('div');
+  projectBtnCointaner.setAttribute('class', 'div-btn-work');
+  // projectBtnCointaner.setAttribute("id", "btn-container-2");
+  // Project see live button
+  const seeLiveAnchor = document.createElement('a');
+  seeLiveAnchor.setAttribute('href', project.linkLiveVersion);
+  seeLiveAnchor.setAttribute('target', '_blank');
+  seeLiveAnchor.setAttribute('rel', 'noopener');
+  seeLiveAnchor.setAttribute('style', 'text-decoration:none');
+  const seeLiveBtn = document.createElement('button');
+  seeLiveBtn.setAttribute('class', 'work-btn');
+  const seeLiveBtnText = document.createTextNode('See live');
+  seeLiveBtn.appendChild(seeLiveBtnText);
+  const iconLive = document.createElement('span');
+  iconLive.setAttribute('class', 'icon icon-live');
+  seeLiveBtn.appendChild(iconLive);
+  seeLiveAnchor.appendChild(seeLiveBtn);
+  projectBtnCointaner.appendChild(seeLiveAnchor);
+  // Project see source button
+  const seeSourceAnchor = document.createElement('a');
+  seeSourceAnchor.setAttribute('href', project.linkSource);
+  seeSourceAnchor.setAttribute('target', '_blank');
+  seeSourceAnchor.setAttribute('rel', 'noopener');
+  seeSourceAnchor.setAttribute('style', 'text-decoration:none');
+  const seeSourceBtn = document.createElement('button');
+  seeSourceBtn.setAttribute('class', 'work-btn');
+  const seeSourceBtnText = document.createTextNode('See source');
+  seeSourceBtn.appendChild(seeSourceBtnText);
+  const iconSource = document.createElement('span');
+  iconSource.setAttribute('class', 'icon icon-source');
+  seeSourceBtn.appendChild(iconSource);
+  seeSourceAnchor.appendChild(seeSourceBtn);
+  projectBtnCointaner.appendChild(seeSourceAnchor);
+  divProject.appendChild(projectBtnCointaner);
   // All divs inside of the Card div
   dinamicProjects.appendChild(divProject);
 });
 
 // Modals
-const projectModalContainer = document.querySelector('#project-modal-container');
+const projectModalContainer = document.querySelector(
+  '#project-modal-container',
+);
 const projectDetailsModal = document.querySelector('#project-details-modal');
 
 // function to create project's detail modal content
 function createModalProjectContent(id) {
   projectIdModal = id;
   // Search the project with the same id in the projects array
-  const project = projects.find((project) => Number(project.projectID) === Number(id));
+  const project = projects.find(
+    (project) => Number(project.projectID) === Number(id),
+  );
   // Project div headar
   const header = document.createElement('div');
   header.setAttribute('class', 'modal-header');
@@ -196,7 +248,6 @@ function createModalProjectContent(id) {
   // Technologies li
   techs.forEach((tech) => {
     const liTech = document.createElement('li');
-    // liTech.setAttribute('class', "li-style")
     const liText = document.createTextNode(tech);
     liTech.appendChild(liText);
     techUl.appendChild(liTech);
@@ -214,12 +265,16 @@ function createModalProjectContent(id) {
   const projectDespcriptionDiv = document.createElement('div');
   projectDespcriptionDiv.setAttribute('class', 'description-project');
   const projectDespcriptionP1 = document.createElement('p');
-  const textProjectDescription1 = document.createTextNode(project.descriptionP1);
+  const textProjectDescription1 = document.createTextNode(
+    project.descriptionP1,
+  );
   projectDespcriptionP1.appendChild(textProjectDescription1);
   projectDespcriptionP1.setAttribute('class', 'text-p-modal');
   projectDespcriptionDiv.appendChild(projectDespcriptionP1);
   const projectDespcriptionP2 = document.createElement('p');
-  const textProjectDescription2 = document.createTextNode(project.descriptionP2);
+  const textProjectDescription2 = document.createTextNode(
+    project.descriptionP2,
+  );
   projectDespcriptionP2.appendChild(textProjectDescription2);
   projectDespcriptionP2.setAttribute('class', 'text-p-modal');
   projectDespcriptionDiv.appendChild(projectDespcriptionP2);
@@ -234,6 +289,7 @@ function createModalProjectContent(id) {
   seeLiveAnchor.setAttribute('href', project.linkLiveVersion);
   seeLiveAnchor.setAttribute('target', '_blank');
   seeLiveAnchor.setAttribute('rel', 'noopener');
+  seeLiveAnchor.setAttribute('style', 'text-decoration:none');
   const seeLiveBtn = document.createElement('button');
   seeLiveBtn.setAttribute('class', 'modal-buttons');
   const textSeeLiveBtn = document.createTextNode('See live');
@@ -253,6 +309,7 @@ function createModalProjectContent(id) {
   seeSourceAnchor.setAttribute('href', project.linkSource);
   seeSourceAnchor.setAttribute('target', '_blank');
   seeSourceAnchor.setAttribute('rel', 'noopener');
+  seeSourceAnchor.setAttribute('style', 'text-decoration:none');
   const seeSourceBtn = document.createElement('button');
   seeSourceBtn.setAttribute('class', 'modal-buttons');
   const textSeeSourceBtn = document.createTextNode('See source');
@@ -321,7 +378,7 @@ function openModal() {
 dinamicProjects.addEventListener('click', (e) => {
   const elementId = e.target.id;
   // Only for button See project
-  if (e.target.classList.contains('button-work')) {
+  if (e.target.classList.contains('img-work')) {
     cleanModal(projectDetailsModal.id);
     createModalProjectContent(elementId);
     openModal();
@@ -387,18 +444,20 @@ function storageAvailable(type) {
     storage.removeItem(x);
     return true;
   } catch (e) {
-    return e instanceof DOMException && (
+    return (
+      e instanceof DOMException
       // everything except Firefox
-      e.code === 22
-      // Firefox
-      || e.code === 1014
-      // test name field too, because code might not be present
-      // everything except Firefox
-      || e.name === 'QuotaExceededError'
-      // Firefox
-      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && (e.code === 22
+        // Firefox
+        || e.code === 1014
+        // test name field too, because code might not be present
+        // everything except Firefox
+        || e.name === 'QuotaExceededError'
+        // Firefox
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
       // acknowledge QuotaExceededError only if there's something already stored
-      && localStorage.length !== 0;
+      && localStorage.length !== 0
+    );
   }
 }
 
