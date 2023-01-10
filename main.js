@@ -118,6 +118,15 @@ projects.forEach((project) => {
   projectName.appendChild(projectNameText);
   divProjectName.appendChild(projectName);
   divProject.appendChild(divProjectName);
+  // Div for description
+  const divProjectDescription = document.createElement('div');
+  divProjectDescription.setAttribute('class','flex-work-description');
+  const projectDescription = document.createElement('p');
+  const desciption = project.descriptionP1.concat( ).concat(project.descriptionP2);
+  const projectDescriptionText = document.createTextNode(desciption);
+  projectDescription.appendChild(projectDescriptionText);
+  divProjectDescription.appendChild(projectDescription);
+  divProject.appendChild(divProjectDescription);
   // Div for flex technologies
   const divFlexTech = document.createElement('div');
   if (project.projectID === 1 || project.projectID === 6) {
