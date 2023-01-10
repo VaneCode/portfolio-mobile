@@ -28,7 +28,7 @@ const projects = [
     technologies: ['Tailwind', 'Ruby on Rails', 'PostgreSQL'],
     descriptionP1:
       'This is a mobile web application, which allows users to control their budgets.'
-      + 'The user can divide the budget into different categories. ',
+      + ' The user can divide the budget into different categories. ',
     descriptionP2:
       'And insert the expenses that have been made in the categories.'
       + ' This project was built with Ruby on Rails, Postgresql, and Tailwind.',
@@ -42,10 +42,10 @@ const projects = [
     technologies: ['Bootstrap', 'React', 'Axios'],
     descriptionP1:
       'Space travelers is an exciting project for space adventurers.'
-      + 'This application allows them to reserve rockets, and also join space missions.',
+      + ' This application allows them to reserve rockets, and also join space missions.',
     descriptionP2:
-      'Users can go to their profiles to see their reserved rockets and missions.'
-      + 'As well as cancel them.',
+      ' Users can go to their profiles to see their reserved rockets and missions.'
+      + ' As well as cancel them.',
     linkLiveVersion: 'https://poetic-truffle-186148.netlify.app/',
     linkSource: 'https://github.com/VaneCode/SpaceTravelers',
   },
@@ -56,10 +56,10 @@ const projects = [
     technologies: ['HTML5/CSS3', 'React', 'MUI'],
     descriptionP1:
       'The perfect website for reading lovers, it shows information about a list of books fetched from an API.'
-      + 'With this application, the user can add a book, and delete a select book.',
+      + ' With this application, the user can add a book, and delete a select book.',
     descriptionP2:
-      'The app also shows the reading progress by book.'
-      + 'This project was created with React, HTML5, and CSS3.',
+      ' The app also shows the reading progress by book.'
+      + ' This project was created with React, HTML5, and CSS3.',
     linkLiveVersion: 'https://idyllic-starship-595a45.netlify.app/',
     linkSource: 'https://github.com/VaneCode/Bookstore',
   },
@@ -70,10 +70,10 @@ const projects = [
     technologies: ['HTML5/SASS', 'JavaScript', 'Luxon'],
     descriptionP1:
       'This is a web tool that allows the user to organize the task for the day.'
-      + 'Users can add a new task, check a task as completed.',
+      + ' Users can add a new task, check a task as completed.',
     descriptionP2:
-      'Also, delete all completed tasks and clear the list.'
-      + 'his project was created usign JavaScript, HTML5 and SASS.',
+      ' Also, delete all completed tasks and clear the list.'
+      + ' This project was created usign JavaScript, HTML5 and SASS.',
     linkLiveVersion: 'https://github.com/VaneCode/to-do-list',
     linkSource: 'https://vanecode.github.io/to-do-list/dist/',
   },
@@ -83,11 +83,11 @@ const projects = [
     featuredImage: 'images/project_5.jpg',
     technologies: ['HTML5', 'Sass', 'JavaScript'],
     descriptionP1:
-      'This is a project that shows the highest scores in the dashboard.'
-      + 'and allows the user to enter their own scores.',
+      'This is a project that shows the highest scores in the dashboard '
+      + 'and allows the user to enter their scores.',
     descriptionP2:
-      'So with this project, you can keep track of any game that you want.'
-      + 'This project was building using Webpack, Sass, JavaScript and HTML5.',
+      ' So with this project, you can keep track of any game that you want.'
+      + ' This project was built using Webpack, Sass, JavaScript, and HTML5.',
     linkLiveVersion: 'https://tubular-vacherin-65e4cd.netlify.app/',
     linkSource: 'https://github.com/VaneCode/leaderboard',
   },
@@ -98,10 +98,10 @@ const projects = [
     technologies: ['HTML5', 'Sass', 'JavaScript'],
     descriptionP1:
       'This is a project that contains a web page of the gallery Evocative Artworks.'
-      + 'Its information and, featured exhibitions.',
+      + ' Its information and, featured exhibitions.',
     descriptionP2:
-      'This application was creating using the approach mobile first.'
-      + 'This project was built using JavaScript, HTML5 and Sass.',
+      ' This application was created using the approach of mobile first.'
+      + ' This project was built using JavaScript, HTML5, and Sass.',
     linkLiveVersion: 'https://vanecode.github.io/art-gallery/',
     linkSource: 'https://github.com/VaneCode/art-gallery',
   },
