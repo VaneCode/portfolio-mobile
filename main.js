@@ -104,6 +104,7 @@ projects.forEach((project) => {
   const imgNumber = project.projectID;
   classImg = classImg.concat(imgNumber);
   divProjectImage.setAttribute('class', classImg);
+  divProjectImage.setAttribute('id', project.projectID);
   divProject.appendChild(divProjectImage);
   // Div project name
   const divProjectName = document.createElement('div');
@@ -159,7 +160,7 @@ projects.forEach((project) => {
   const btnProject = document.createElement('button');
   btnProject.setAttribute('type', 'button');
   btnProject.setAttribute('class', 'button-work');
-  btnProject.setAttribute('id', project.projectID);
+  //btnProject.setAttribute('id', project.projectID);
   const textbtnProject = document.createTextNode(' See this project ');
   const svgIcon = document.createElement('svg');
   svgIcon.setAttribute('class', 'arrow_icon flex-button-icon');
@@ -331,7 +332,7 @@ function openModal() {
 dinamicProjects.addEventListener('click', (e) => {
   const elementId = e.target.id;
   // Only for button See project
-  if (e.target.classList.contains('button-work')) {
+  if (e.target.classList.contains('img-work')) {
     cleanModal(projectDetailsModal.id);
     createModalProjectContent(elementId);
     openModal();
